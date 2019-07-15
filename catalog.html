@@ -5,27 +5,29 @@
     <title>Проект cat-energy</title>
   </head>
   <body>
-    <header class="catalog-header">
+    <header class="main-header">
       <a class="main-header__logo" href="#">
-          <img class="main-header__logo-img" src="img/main-logo.svg" width="100" height="100" alt="Логотип сайта Cat-Energy">
+        <img class="main-header__logo-img" src="img/main-logo.svg" width="100" height="100" alt="Логотип сайта Cat-Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Главное меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list nav-list">
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="nav-list__item nav-list__item--active">Каталог продукции</li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-list__item nav-list__item--active">
+            <a class="nav-list__link">Каталог продукции</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="catalog-page">
-      <h1 class="catalog-page__catalog-title">Каталог продукции</h1>
+      <div class="greetings-block">
+        <h1 class="greetings-block__main-title">Каталог продукции</h1>
+      </div>
       <section class="catalog-production">
         <ul class="catalog-production__catalog catalog-list">
           <li class="catalog-list__item">
@@ -236,8 +238,6 @@
       <section class="present">
         <p class="present__order-now">Закажите все и получите чехол для кота в подарок!</p>
       </section>
-    </main>
-    <footer class="catalog-footer">
       <section class="location">
         <div class="location__our-adress">
           <p class="location__cooperation">Приглашаем к сотрудничеству дилеров!</p>
@@ -247,6 +247,8 @@
           <img class="location__map-logo" src="img/map.jpg" width="100" height="100" alt="Как нас найти">
         </div>
       </section>
+    </main>
+    <footer class="main-footer">
       <a class="catalog-footer__footer-logo-link" href="#">
         <img class="main-footer__footer-logo" src="img/footer-logo.img" width="100" height="100" alt="Дополнительный логотип">
       </a>
