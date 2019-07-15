@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Проект cat-energy</title>
+  </head>
+  <body>
+    <header class="catalog-header">
+      <a class="main-header__logo" href="#">
+          <img class="main-header__logo-img" src="img/main-logo.svg" width="100" height="100" alt="Логотип сайта Cat-Energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Главное меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="nav-list__item nav-list__item--active">Подбор программы</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="form-page">
+      <h1 class="form-page__form-title">Подбор программы</h1>
+      <section class="product-selection">
+        <h2 class="product-selection__selection-title">Заполните анкету и мы подберем программу питания для вашего кота</h2>
+        <form class="product-selection__selection-form"  action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="product-selection__cat-parameters">
+            <legend class="visually-hidden">Параметры кота</legend>
+            <p class="product-selection__paragraph-data">
+              <label class="product-selection__description" for="cat-name">Имя:*</label>
+              <input class="product-selection__text-field" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+            </p>
+            <p class="product-selection__paragraph-data">
+              <label class="product-selection__description" for="cat-weight">Вес:*</label>
+              <input class="product-selection__text-field" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+            </p>
+            <p class="product-selection__paragraph-data">
+              <label class="product-selection__description" for="cat-age">Возраст(лет):</label>
+              <input class="product-selection__text-field" type="text" name="cat-age" id="cat-age" placeholder="7">
+            </p>
+          </fieldset>
+          <fieldset class="product-selection__program-selection">
+            <legend class="visually-hidden">Подбор программы</legend>
+            <ul class="product-selection__program-list">
+              <li class="program-list__program-item">
+                <label class="product-selection__description" for="slim">Похудение</label>
+                <input class="product-selection__radio-button" type="radio" name="select-program" id="slim" checked>
+              </li>
+              <li class="program-list__program-item">
+                <label class="product-selection__description" for="fat">Набор массы</label>
+                <input class="product-selection__radio-button" type="radio" name="select-program" id="fat">
+              </li>
+              <li class="program-list__program-item">
+                <label class="product-selection__description" for="need-help">Не знаю (нужен ваш совет)</label>
+                <input class="product-selection__radio-button" type="radio" name="select-program" id="need-help">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="product-selection__contact-cat">
+            <legend class="product-selection__category-name">Контактные данные (владельца кота)</legend>
+            <p class="product-selection__paragraph-data">
+              <label class="product-selection__description" for="email">E-Mail:*</label>
+              <input class="product-selection__text-field" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+            </p>
+            <p class="product-selection__paragraph-data">
+              <label class="product-selection__description" for="tel">Телефон:*</label>
+              <input class="product-selection__text-field" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+            </p>
+          </fieldset>
+          <fieldset class="product-selection__your-comment">
+            <legend class="product-selection__category-name">Комментарий</legend>
+            <p class="product-selection__paragraph-data">
+              <textarea class="prodect-selection__text-area">Расскажите обо все повадках кота</textarea>
+            </p>
+          </fieldset>
+          <fieldset class="product-selection__extra-options">
+            <legend class="product-selection__category-name">Дополнительно</legend>
+            <ul class="product-selection__checkbox-list">
+              <li class="product-selection__checkbox-item">
+                <label class="product-selection__description" for="sugar">Сахарозаменитель</label>
+                <input class="product-selection__checkbox" type="checkbox" name="sugar" id="sugar" checked>
+              </li>
+              <li class="product-selection__checkbox-item">
+                <label class="product-selection__description" for="water">Питьевая вода</label>
+                <input class="product-selection__checkbox" type="checkbox" name="water" id="water">
+              </li>
+              <li class="product-selection__checkbox-item">
+                <label class="product-selection__description" for="milk">Молоко</label>
+                <input class="product-selection__checkbox" type="checkbox" name="milk" id="milk">
+              </li>
+              <li class="product-selection__checkbox-item">
+                <label class="product-selection__description" for="vitamins">Витамины</label>
+                <input class="product-selection__checkbox" type="checkbox" name="vitamins" id="vitamins">
+              </li>
+            </ul>
+          </fieldset>
+          <button class="product-selection__submit" type="submit">Отправить заявку</button>
+          <small class="prodect-selection__note">
+            <sup>*</sup> - Обязательные поля
+          </small>
+        </form>
+      </section>
+    </main>
+    <footer class="form-footer">
+      <section class="location">
+        <div class="location__our-adress">
+          <p class="location__cooperation">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="location__actual-adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="location__map">
+          <img class="location__map-logo" src="img/map.jpg" width="100" height="100" alt="Как нас найти">
+        </div>
+      </section>
+      <a class="form-footer__footer-logo-link" href="#">
+        <img class="main-footer__footer-logo" src="img/footer-logo.img" width="100" height="100" alt="Дополнительный логотип">
+      </a>
+      <ul class="form-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link">Вконтакте</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link">Инстаграм</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link">Фейсбук</a>
+        </li>
+      </ul>
+      <div class="form-footer__copyright">
+        <p class="form-footer__name-company">Html-Academy</p>
+        <a class="form-footer__company-link">HTML-Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>

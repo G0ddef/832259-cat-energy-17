@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Проект cat-energy</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-img" src="img/main-logo.svg" width="100" height="100" alt="Логотип сайта Cat-Energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Главное меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list nav-list">
+            <li class="nav-list__item site-list__item--active">Главная</li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-page">
+      <h1 class="main-page__main-title">Функциональное питание для котов</h1>
+      <div class="program-selection">
+        <p class="program-selection__help-cat">Занялся собой? Займись котом!</p>
+        <a class="program-selection__select-program" href="form.html">Подобрать программу</a>
+      </div>
+      <section class="product-price">
+        <ul class="product-price__list">
+          <li class="product-price__item how-works__item--slim">
+            <h3 class="product-price__mass-regulation">Похудение</h3>
+            <p class="product-price__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес</p>
+            <a class="product-price__link" href="#">Каталог Slim</a>
+          </li>
+          <li class="product-price__item how-works__item--fat">
+            <h3 class="product-price__mass-regulation">Набор массы</h3>
+            <p class="product-price__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+              поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="product-price__link" href="#">Каталог Pro</a>
+          </li>
+        </ul>
+      </section>
+      <section class="how-works">
+        <h2 class="how-works__how-work-program">Как это работает</h2>
+        <p class="how-works__description how-works__description--nutrients">Функциональное питание содержит только полезные питательные вещества.</p>
+        <p class="how-works__description how-works__description--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        <p class="how-works__description how-works__description--functional-nutrition">Замените один-два приема обычной еды на наше функциональное питание.</p>
+        <p class="how-works__description how-works__description--change-better">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+      </section>
+      <section class="living-example">
+        <h2 class="living-example__title">Живой пример</h2>
+        <p class="living-example__description">Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
+          без изнуряющих тренировок! При этом он не поменял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="living-example__weight-time proportionality">
+          <p class="proportionality__value">5 КГ</p>
+          <p class="proportionality__specification">Снижение веса</p>
+        </div>
+        <div class="living-example__weight-time proportionality">
+          <p class="proportionality__value">60 дней</p>
+          <p class="proportionality__specification">Затрачено времени</p>
+        </div>
+        <div class="living-example__result-action">
+          <b class="living-example__food-cost">Затраты на питание: 15000 руб.</b>
+          <div class="living-example__slider">
+            <div class="living-example__results living-example__results--before">
+              <img class="living-examle__cat-logo" src="img/before.jpg" width="100"  height="100" alt="До приема питания">
+            </div>
+            <div class="living-example__results living-example__results--after">
+              <img class="living-examle__cat-logo" src="img/after.jpg" width="100" height="100" alt="После приема питания">
+            </div>
+            <div class="living-example__slide-list">
+              <button class="livng-example__slide-item" type="button">Было</button>
+              <button class="living-example__slide-item" type="button">Стало</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="location">
+        <div class="location__our-adress">
+          <p class="location__cooperation">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="location__actual-adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="location__map">
+          <img class="location__map-logo" src="img/map.jpg" width="100" height="100" alt="Как нас найти">
+        </div>
+      </section>
+      <a class="main-footer__footer-logo-link" href="#">
+        <img class="main-footer__footer-logo" src="img/footer-logo.img" width="100" height="100" alt="Дополнительный логотип">
+      </a>
+      <ul class="main-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link">Вконтакте</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link">Инстаграм</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link">Фейсбук</a>
+        </li>
+      </ul>
+      <div class="main-footer__copyright">
+        <p class="main-footer__name-company">Html-Academy</p>
+        <a class="main-footer__company-link">HTML-Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
