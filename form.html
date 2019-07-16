@@ -30,36 +30,38 @@
       </div>
       <section class="product-selection">
         <h2 class="product-selection__selection-title">Заполните анкету и мы подберем программу питания для вашего кота</h2>
-        <form class="product-selection__selection-form"  action="https://echo.htmlacademy.ru" method="GET">
+        <form class="product-selection__form"  action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="product-selection__cat-parameters">
             <legend class="visually-hidden">Параметры кота</legend>
-            <p class="product-selection__paragraph-data">
-              <label class="product-selection__description" for="cat-name">Имя:*</label>
-              <input class="product-selection__text-field" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
-            </p>
-            <p class="product-selection__paragraph-data">
-              <label class="product-selection__description" for="cat-weight">Вес:*</label>
-              <input class="product-selection__text-field" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
-            </p>
-            <p class="product-selection__paragraph-data">
-              <label class="product-selection__description" for="cat-age">Возраст(лет):</label>
-              <input class="product-selection__text-field" type="text" name="cat-age" id="cat-age" placeholder="7">
-            </p>
+            <ul class="product-selection__paragraph-list">
+              <li class="product-selection__paragraph-item">
+                <label class="product-selection__description" for="cat-name">Имя:*</label>
+                <input class="product-selection__text-field" type="text" name="cat-name" id="cat-name" value="name" placeholder="Барсик" required>
+              </li>
+              <li class="product-selection__paragraph-item">
+                <label class="product-selection__description" for="cat-weight">Вес:*</label>
+                <input class="product-selection__text-field" type="text" name="cat-weight" id="cat-weight" value="weight" placeholder="7" required>
+              </li>
+              <li class="product-selection__paragraph-item">
+                <label class="product-selection__description" for="cat-age">Возраст(лет):</label>
+                <input class="product-selection__text-field" type="text" name="cat-age" id="cat-age" value="age" placeholder="7">
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="product-selection__program-selection">
             <legend class="visually-hidden">Подбор программы</legend>
             <ul class="product-selection__program-list">
               <li class="program-list__program-item">
                 <label class="product-selection__description" for="slim">Похудение</label>
-                <input class="product-selection__radio-button" type="radio" name="select-program" id="slim" checked>
+                <input class="product-selection__radio-button" type="radio" name="select-program" id="slim" value="slim" checked>
               </li>
               <li class="program-list__program-item">
                 <label class="product-selection__description" for="fat">Набор массы</label>
-                <input class="product-selection__radio-button" type="radio" name="select-program" id="fat">
+                <input class="product-selection__radio-button" type="radio" name="select-program" id="fat" value="fat">
               </li>
               <li class="program-list__program-item">
                 <label class="product-selection__description" for="need-help">Не знаю (нужен ваш совет)</label>
-                <input class="product-selection__radio-button" type="radio" name="select-program" id="need-help">
+                <input class="product-selection__radio-button" type="radio" name="select-program" id="need-help" value="help">
               </li>
             </ul>
           </fieldset>
@@ -67,11 +69,11 @@
             <legend class="product-selection__category-name">Контактные данные (владельца кота)</legend>
             <p class="product-selection__paragraph-data">
               <label class="product-selection__description" for="email">E-Mail:*</label>
-              <input class="product-selection__text-field" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              <input class="product-selection__text-field" type="email" name="email" id="email" value="email" placeholder="kuklachev@gmail.com" required>
             </p>
             <p class="product-selection__paragraph-data">
               <label class="product-selection__description" for="tel">Телефон:*</label>
-              <input class="product-selection__text-field" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+              <input class="product-selection__text-field" type="tel" name="tel" id="tel" value="tel" placeholder="8 (960) 900-60-90" required>
             </p>
           </fieldset>
           <fieldset class="product-selection__your-comment">
@@ -85,23 +87,23 @@
             <ul class="product-selection__checkbox-list">
               <li class="product-selection__checkbox-item">
                 <label class="product-selection__description" for="sugar">Сахарозаменитель</label>
-                <input class="product-selection__checkbox" type="checkbox" name="sugar" id="sugar" checked>
+                <input class="product-selection__checkbox" type="checkbox" name="sugar" id="sugar" value="sugar" checked>
               </li>
               <li class="product-selection__checkbox-item">
                 <label class="product-selection__description" for="water">Питьевая вода</label>
-                <input class="product-selection__checkbox" type="checkbox" name="water" id="water">
+                <input class="product-selection__checkbox" type="checkbox" name="water" id="water" value="water">
               </li>
               <li class="product-selection__checkbox-item">
                 <label class="product-selection__description" for="milk">Молоко</label>
-                <input class="product-selection__checkbox" type="checkbox" name="milk" id="milk">
+                <input class="product-selection__checkbox" type="checkbox" name="milk" id="milk" value="milk">
               </li>
               <li class="product-selection__checkbox-item">
                 <label class="product-selection__description" for="vitamins">Витамины</label>
-                <input class="product-selection__checkbox" type="checkbox" name="vitamins" id="vitamins">
+                <input class="product-selection__checkbox" type="checkbox" name="vitamins" id="vitamins" value="vitamins">
               </li>
             </ul>
           </fieldset>
-          <button class="product-selection__submit" type="submit">Отправить заявку</button>
+          <button class="button" type="submit">Отправить заявку</button>
           <small class="prodect-selection__note">
             <sup>*</sup> - Обязательные поля
           </small>
