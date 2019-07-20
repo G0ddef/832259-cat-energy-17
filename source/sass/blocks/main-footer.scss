@@ -1,0 +1,26 @@
+.main-footer {
+  margin-top: 40px;
+  width: $ph-width;
+}
+
+.main-footer__footer-logo-link {
+  display: block;
+  padding-bottom: 32px;
+  width: $ph-width;
+
+  border-bottom: $border;
+}
+
+.main-footer__social {
+  display: flex;
+  padding: 0;
+  padding-bottom: 20px;
+  width: $ph-width;
+
+  border-bottom: $border;
+}
+
+.main-footer__copyright {
+  padding-bottom: 24px;
+  width: $center;
+}

@@ -1,0 +1,174 @@
+.product-selection {
+  width: $ph-width;
+}
+
+.product-selection__title {
+  margin: $content-center;
+  width: 280px;
+
+  color: $black;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.product-selection__form {
+  padding-top: 40px;
+}
+
+.product-selection__cat-parameters {
+  padding: 0;
+
+  border: none;
+  border-bottom: $border;
+}
+
+.product-selection__paragraph-list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+}
+
+.product-selection__paragraph-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 48px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.product-selection__wrapper {
+  margin: $content-center;
+  width: $center;
+}
+
+.product-selection__description {
+  color: $black;
+  font-size: 16px;
+  font-weight: $regular;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.product-selection__program-selection {
+  padding: 0;
+
+  border: none;
+}
+
+.product-selection__program-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-bottom: $border;
+}
+
+.product-selection__program-item {
+  padding-bottom: 29px;
+
+  &:last-child {
+    padding: 0;
+  }
+}
+
+.product-selection__contact-cat {
+  padding: 0;
+  padding-bottom: 46px;
+
+  border: none;
+  border-bottom: $border;
+}
+
+.product-selection__category-name {
+  margin: $content-center;
+  padding-top: 33px;
+  padding-bottom: 45px;
+  width: $center;
+}
+
+.product-selection__contact-list {
+  margin: 0;
+  padding: 0;
+}
+
+.product-selection__contact-item {
+  padding-bottom: 45px;
+
+  &:last-child {
+    padding: 0;
+  }
+}
+
+.product-selection__your-comment {
+  margin: $content-center;
+  padding: 0;
+  padding-bottom: 34px;
+  width: $center;
+
+  border: none;
+}
+
+.product-selection__comment-name {
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  color: $black;
+  font-size: $sub-title;
+  font-weight: $regular;
+  line-height: $sub-title;
+}
+
+.product-selection__extra-options {
+  padding: 0;
+
+  border: none;
+}
+
+.product-selection__additionally {
+  margin: $content-center;
+  padding-bottom: 40px;
+  width: $center;
+
+  color: $black;
+  font-size: $sub-title;
+  font-weight: $regular;
+  line-height: $sub-title;
+}
+
+.product-selection__checkbox-list {
+  margin: $content-center;
+  padding: 0;
+  padding-bottom: 44px;
+  width: $center;
+}
+
+.product-selection__checkbox-item {
+  padding-bottom: 29px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.product-selection__small {
+  margin: $content-center;
+  padding-top: 24px;
+  width: $center;
+
+  text-align: center;
+}
+
+.product-selection__note {
+  font-family: "Arial", sans-serif;
+  color: $black;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 16px;
+  text-align: center;
+}
+

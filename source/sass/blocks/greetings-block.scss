@@ -1,0 +1,21 @@
+.greetings-block {
+  padding-top: 33px;
+  padding-bottom: 35px;
+  width: $ph-width;
+
+  border-bottom: $border;
+}
+
+.greetings-block--no-border {
+  border-bottom: none;
+}
+
+.greetings-block__main-title {
+  margin: $content-center;
+  width: $center;
+
+  color: $black;
+  font-size: $title;
+  font-weight: $regular;
+  line-height: 60px;
+}
