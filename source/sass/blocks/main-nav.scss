@@ -1,0 +1,30 @@
+.main-nav {
+  margin: $content-center;
+  width: $center;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  border-top: $border;
+}
+
+.main-nav__item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  text-align: center;
+
+  border-bottom: $border;
+}
+
+.main-nav__link {
+  color: $black;
+  font-size: 20px;
+  font-weight: $regular;
+  line-height: 20px;
+  text-transform: uppercase;
+}

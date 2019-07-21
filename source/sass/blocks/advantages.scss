@@ -1,0 +1,30 @@
+.advantages {
+  margin-top: 35px;
+  width: $ph-width;
+}
+
+.advantages__title {
+  margin: $content-center;
+  margin-bottom: 42px;
+  width: $center;
+
+  color: $black;
+  font-size: $title;
+  font-weight: $regular;
+  line-height: 60px;
+}
+
+.advantages__description {
+  margin: $content-center;
+  padding-left: 80px;
+  margin-bottom: 34px;
+  width: 177px;
+
+  font-size: $description;
+  font-weight: $regular;
+  line-height: 18px;
+}
+
+.advantages__description:last-child {
+  margin-bottom: 0;
+}

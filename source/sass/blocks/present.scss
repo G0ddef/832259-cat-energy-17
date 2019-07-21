@@ -1,0 +1,27 @@
+.present {
+  width: $ph-width;
+}
+
+.present__wrapper {
+  margin: $content-center;
+  margin-top: 39px;
+  margin-bottom: 47px;
+  width: $center;
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-size: contain;
+}
+
+.present__order-now {
+  margin: $content-center;
+  padding-top: 190px;
+  padding-bottom: 40px;
+  width: 162px;
+
+  font-family: "Arial", sans-serif;
+  color: $white;
+  font-size: 16px;
+  font-weight: $regular;
+  line-height: 20px;
+  text-align: center;
+}
