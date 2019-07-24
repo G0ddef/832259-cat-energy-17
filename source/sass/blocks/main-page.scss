@@ -1,0 +1,11 @@
+.main-page {
+  display: block;
+  margin: $content-center;
+  min-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-page {
+    width: 708px;
+  }
+}

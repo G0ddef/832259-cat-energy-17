@@ -19,6 +19,17 @@
   background-color: $btn-green;
 }
 
+@media (min-width: $tablet-width) {
+  .button--green {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+    margin-left: 120px;
+    width: 245px;
+  }
+}
+
 .button--gray {
   display: block;
 

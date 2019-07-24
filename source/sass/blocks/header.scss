@@ -1,9 +1,21 @@
 .main-header {
-  width: $ph-width;
+  display: flex;
+  flex-direction: column;
+  margin: $content-center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 708px;
+  }
 }
 
 .main-header__logo {
   display: block;
   margin: $content-center;
   width: $center;
+  height: 68px;
 }

@@ -1,6 +1,6 @@
 .main-nav {
+  width: $ph-width;
   margin: $content-center;
-  width: $center;
 }
 
 .main-nav__list {
@@ -12,6 +12,15 @@
   border-top: $border;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+
+    border: none;
+  }
+}
+
 .main-nav__item {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -19,6 +28,16 @@
   text-align: center;
 
   border-bottom: $border;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+    .main-nav__item {
+    border: none;
+  }
 }
 
 .main-nav__link {
