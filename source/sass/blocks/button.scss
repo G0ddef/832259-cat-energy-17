@@ -1,4 +1,7 @@
 .button {
+  @include centring(0 auto, 280px);
+  @include content-text(14px, 14px);
+
   display: block;
   margin: $content-center;
   padding-top: 13px;
@@ -6,9 +9,6 @@
   width: 280px;
 
   color: $white;
-  font-size: $description;
-  font-weight: $regular;
-  line-height: $description;
   text-transform: uppercase;
   text-align: center;
 
@@ -19,8 +19,14 @@
   background-color: $btn-green;
 }
 
+.button--gray {
+  color: #444444;
+
+  background-color: #f2f2f2;
+}
+
 @media (min-width: $tablet-width) {
-  .button--green {
+  .button--program {
     position: relative;
     z-index: 2;
 
@@ -28,12 +34,93 @@
     margin-left: 120px;
     width: 245px;
   }
+
+  .button--order {
+    width: 252px;
+
+    font-size: 16px;
+    font-weight: $regular;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .button--add-order {
+    width: 633px;
+
+    color: $white;
+    font-size: 16px;
+    font-weight: $regular;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .button--send {
+    margin: 0;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 37px;
+    padding-right: 40px;
+    width: 283px;
+
+    color: $white;
+    font-size: 20px;
+    font-weight: $regular;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 }
 
-.button--gray {
-  display: block;
+@media (min-width: $desktop-width) {
+  .button--program {
+    margin-top: 55px;
+    margin-left: 80px;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 243px;
 
-  color: #444444;
+    font-size: 20px;
+    font-weight: $regular;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 
-  background-color: #f2f2f2;
+  .button--order {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 168px;
+
+    font-size: 16px;
+    font-weight: $regular;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .button--add-order {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    width: 245px;
+
+    color: $white;
+    font-size: 16px;
+    font-weight: $regular;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .button--send {
+    margin: 0;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    width: 570px;
+
+    color: $white;
+    font-size: 20px;
+    font-weight: $regular;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 }

@@ -1,21 +1,48 @@
 .greetings-block {
+  margin: 0 auto;
   padding-top: 33px;
   padding-bottom: 35px;
-  width: $ph-width;
+  min-width: $ph-width;
 
   border-bottom: $border;
 }
 
-.greetings-block--no-border {
-  border-bottom: none;
-}
-
 .greetings-block__main-title {
-  margin: $content-center;
-  width: $center;
+  @include centring(0 auto, 280px);
+  @include content-text(36px, 60px);
 
   color: $black;
-  font-size: $title;
-  font-weight: $regular;
-  line-height: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .greetings-block {
+    @include centring(0 auto, 768px);
+
+
+    border: none;
+  }
+
+  .greetings-block__main-title {
+    @include centring(0 auto, 768px);
+    @include content-text(60px, 60px);
+
+    color: $black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .greetings-block {
+    @include centring(0 auto, 1440px);
+
+    padding: 0;
+  }
+
+  .greetings-block__main-title {
+    @include centring(0 auto, 1220px);
+    @include content-text(60px, 60px);
+
+    padding: 0;
+
+    color: $black;
+  }
 }

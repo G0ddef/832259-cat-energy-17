@@ -1,11 +1,18 @@
 .main-page {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin: $content-center;
   min-width: 320px;
 }
 
 @media (min-width: $tablet-width) {
   .main-page {
-    width: 708px;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-page {
+    width: 1440px;
   }
 }

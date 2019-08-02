@@ -1,34 +1,124 @@
 .contacts {
-  margin-top: 30px;
-  width: $ph-width;
   margin: 0 auto;
-
-  background-color: $bg-gray;
+  margin-top: 30px;
+  min-width: 320px;
 }
 
 .contacts__our-address {
+  @include centring(0 auto, 280px);
+
   display: flex;
-  margin: $content-center;
   padding-bottom: 30px;
-  width: $center;
 }
 
 .contacts__title {
+  @include content-text(16px, 20px);
+
   margin: 0;
   width: 140px;
 
   color: $black;
-  font-size: 16px;
-  font-weight: $regular;
-  line-height: 20px;
 }
 
 .contacts__sub-title {
+  @include content-text(14px, 20px);
+
   margin: 0;
   width: 140px;
 
   color: $black;
-  font-size: 14px;
-  font-weight: $regular;
-  line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    margin-top: 68px;
+    width: 768px;
+
+    background-color: #f2f2f2;
+  }
+
+  .contacts__our-address {
+    @include centring(0 auto, 630px);
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .contacts__title {
+    @include content-text(20px, 25px);
+
+    padding-top: 67px;
+    padding-bottom: 62px;
+
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  .contacts__sub-title {
+    @include content-text(16px, 20px);
+
+    padding-top: 67px;
+    padding-bottom: 62px;
+
+    font-family: "Arial", sans-serif;
+    color: $black;
+  }
+
+  .contacts__map {
+    @include centring (0 auto, 630px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+
+    margin-top: 0;
+    width: 1440px;
+    height: 399px;
+  }
+
+  .contacts__our-address {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 0;
+    width: 575px;
+
+    background-color: $white;
+  }
+
+  .contacts__title {
+    @include content-text(20px, 25px);
+
+    padding-top: 69px;
+    padding-left: 75px;
+    padding-right: 94px;
+    width: 160px;
+
+    color: $black;
+  }
+
+  .contacts__sub-title {
+    @include content-text(16px, 20px);
+
+    width: 175px;
+
+    font-family: "Arial", sans-serif;
+    color: $black;
+  }
+
+  .contacts__city {
+    @include content-text(16px, 20px);
+
+    display: block;
+    padding-top: 20px;
+
+    font-family: "Arial", sans-serif;
+    color: $black;
+  }
 }
