@@ -1,5 +1,5 @@
 .program-selection {
-  min-width: $ph-width;
+  min-width: 320px;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -10,9 +10,7 @@
   @include centring(0 auto, 280px);
   @include content-text(36px, 36px);
 
-  margin: $content-center;
   padding-top: 25px;
-  width: $center;
 
   color: $white;
   text-align: center;
@@ -52,6 +50,8 @@
 
 @media (min-width: $tablet-width) {
   .program-selection {
+    @include centring(0 auto, 708px);
+
     background-image: none;
   }
 

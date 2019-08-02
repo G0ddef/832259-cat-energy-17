@@ -1,5 +1,6 @@
 .main-nav {
-  min-width: $ph-width;
+  margin: 0 auto;
+  min-width: 320px;
 }
 
 .main-nav__list {
@@ -57,7 +58,7 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     z-index: 2;
-
+    margin: 0;
     width: 540px;
   }
 
