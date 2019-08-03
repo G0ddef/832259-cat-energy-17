@@ -61,7 +61,7 @@
     margin: 0;
     margin-left: 120px;
     padding-top: 58px;
-    width: 413px;
+    width: 417px;
 
     color: $black;
     text-align: left;
@@ -107,8 +107,6 @@
   }
 
   .program-selection__title {
-    @include content-text(60px, 60px);
-
     margin: 0;
     padding-top: 110px;
     padding-left: 80px;
@@ -118,17 +116,11 @@
   }
 
   .program-selection__sub-title {
-    @include content-text(20px, 20px);
-
     position: static;
 
-    padding-top: 50px;
     padding-bottom: 0;
     padding-left: 80px;
     width: 318px;
-
-    color: $black;
-    text-transform: uppercase;
 
     &::before {
       content: "";

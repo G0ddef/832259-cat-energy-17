@@ -78,9 +78,6 @@
     padding-bottom: 34px;
     padding-left: 55px;
     width: 217px;
-
-    color: $black;
-    text-transform: uppercase;
   }
 
   .product-price__description {
@@ -89,8 +86,6 @@
     margin: 0;
     padding-bottom: 57px;
     padding-left: 55px;
-
-    color: $black;
 
     border: none;
   }
@@ -124,14 +119,9 @@
   }
 
   .product-price__title {
-    @include content-text(36px, 37px);
-
     padding-top: 83px;
     padding-bottom: 82px;
     padding-left: 211px;
-
-    color: $black;
-    text-transform: uppercase;
   }
 
   .product-price__description {
@@ -142,7 +132,6 @@
     width: 466px;
 
     font-family: "Arial", sans-serif;
-    color: $black;
   }
 
   .product-price__link {
@@ -150,8 +139,5 @@
 
     padding-bottom: 64px;
     padding-left: 55px;
-
-    color: $black;
-    text-transform: uppercase;
   }
 }

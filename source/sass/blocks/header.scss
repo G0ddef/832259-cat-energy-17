@@ -24,11 +24,6 @@
 @media (min-width: $desktop-width) {
   .main-header {
     @include centring(0 auto, 1220px);
-
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 
   .main-header__logo {

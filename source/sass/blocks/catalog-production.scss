@@ -179,7 +179,6 @@
     @include centring(0 auto, 136px);
     @include content-text(20px, 20px);
 
-    padding-top: 140px;
     padding-bottom: 46px;
 
     color: $black;
@@ -190,7 +189,7 @@
     @include centring(0 auto, 171px);
     @include content-text(16px, 16px);
 
-    padding-bottom: 86px;
+    padding-bottom: 75px;
 
     color: $black;
   }

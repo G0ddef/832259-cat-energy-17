@@ -88,8 +88,6 @@
   }
 
   .advantages__title {
-    @include content-text(60px, 60px);
-
     padding-top: 0;
     padding-bottom: 180px;
     padding-left: 0;
@@ -100,10 +98,6 @@
 
   .advantages__container {
     @include centring(0 auto, 1220px);
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 
     border: none;
   }
