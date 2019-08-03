@@ -1,6 +1,6 @@
 @mixin centring($margin, $width) {
   margin: $margin;
-  min-width: $width;
+  width: $width;
 }
 
 @mixin content-text($font-size, $line-height) {
