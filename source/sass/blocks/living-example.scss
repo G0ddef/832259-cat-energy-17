@@ -1,6 +1,4 @@
 .living-example {
-  min-width: 320px;
-
   background-color: $bg-gray;
 }
 
@@ -20,6 +18,7 @@
 
   padding-bottom: 30px;
 
+  font-family: "Arial", sans-serif;
   color: $black;
 }
 
@@ -37,6 +36,7 @@
   margin: 0;
 
   color: $black;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -48,6 +48,7 @@
 
   font-family: "Arial", sans-serif;
   color: $black;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -79,28 +80,16 @@
 
 @media (min-width: $tablet-width) {
   .living-example {
-    @include centring(0 auto, 768px);
-
-
     background-color: $white;
   }
 
-  .living-example__container {
-    @include centring(0 auto, 708px);
-
-    padding-bottom: 250px;
-  }
-
   .living-example__title {
+    @include centring(0 auto, 708px);
     @include content-text(60px, 60px);
 
-    margin: 0;
     padding-top: 50px;
     padding-bottom: 60px;
     padding-left: 30px;
-    width: 350px;
-
-    color: $black;
   }
 
   .living-example__description {
@@ -108,12 +97,12 @@
 
     margin: 0;
     padding-bottom: 80px;
-    width: 678px;
-
-    color: $black;
+    width: 680px;
   }
 
   .living-example__wrapper {
+    @include centring(0 auto, 708px);
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -137,16 +126,10 @@
 
   .living-example__value {
     @include content-text(30px, 37px);
-
-    color: $black;
-    text-transform: uppercase;
   }
 
   .living-example__specification {
     @include content-text(14px, 14px);
-
-    font-family: "Arial", sans-serif;
-    text-transform: lowercase;
   }
 
   .living-example__food-cost {
@@ -155,14 +138,12 @@
     padding: 0;
     width: 230px;
 
-    font-family: "Arial", sans-serif;
     text-transform: uppercase;
     text-align: right;
   }
 
   .living-example__result-action {
-    padding-left: -30px;
-    width: 768px;
+    margin-top: 250px;
 
     background-color: $bg-gray;
   }
@@ -190,56 +171,45 @@
 @media (min-width: $desktop-width) {
   .living-example {
     margin-top: 140px;
-    width: 1440px;
-
-    background-color: $bg-gray;
   }
 
   .living-example__first-container {
-    @include centring(0 auto, 1220px);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 69px;
+    background-color: $bg-gray;
   }
 
   .living-example__container {
-    margin: 0;
+    margin: 0 auto;
     padding-bottom: 0;
-    padding-left: 110px;
-    width: 450px;
+    width: 1220px;
   }
 
   .living-example__title {
-    @include content-text(60px, 60px);
+    @include centring(0 auto, 1220px);
 
+    padding: 0;
     padding-bottom: 67px;
-    padding-left: 110px;
-    width: 1440px;
-
-    color: $black;
 
     background-color: $white;
   }
 
   .living-example__description {
-    @include content-text(16px, 24px);
-
     padding-top: 77px;
     padding-bottom: 0;
     width: 440px;
-
-    font-family: "Arial", sans-serif;
-    color: $black;
   }
 
-  .living-example__wrapper {
+  .living-example__row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .living-example__wrapper {
+    display: block;
     padding-top: 92px;
-    width: 390px;
+    padding-right: 210px;
+    margin: 0;
+    width: 440px;
   }
 
   .living-example__conclusion {
@@ -250,37 +220,16 @@
     padding-right: 95px;
   }
 
-  .living-example__value {
-    @include content-text(30px, 37px);
-
-    color: $black;
-    text-transform: uppercase;
-  }
-
-  .living-example__specification {
-    @include content-text(14px, 14px);
-
-    padding-top: 20px;
-
-    font-family: "Arial", sans-serif;
-    color: $black;
-    text-transform: lowercase;
-  }
-
   .living-example__sub-title {
     padding-top: 58px;
   }
 
   .living-example__food-cost {
-    @include content-text(20px, 20px);
-
     display: inline-block;
     vertical-align: top;
     margin: 0;
     width: 400px;
 
-    color: $black;
-    text-transform: uppercase;
     text-align: left;
   }
 
@@ -295,13 +244,19 @@
   }
 
   .living-example__result-action {
-    width: 580px;
+    margin: 0;
+    width: 570px;
 
     background-color: #f2f2f2;
   }
 
   .living-example__slider {
-    padding-top: 230px;
+    padding-top: 60px;
     padding-bottom: 0;
+    width: 570px;
+  }
+
+  .living-example__slide-list {
+    @include centring(0 auto, 570px);
   }
 }

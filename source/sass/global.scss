@@ -19,8 +19,8 @@ body {
 
   position: relative;
 
-  margin: 0 auto;
-  min-width: 320px;
+  margin: 0;
+  padding: 0;
 
   font-family: "Oswald", "Arial", sans-serif;
   color: $black;
@@ -31,16 +31,12 @@ body {
 @media (min-width: $tablet-width) {
   body {
     @include content-text(16px, 24px);
-
-    min-width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   body {
     @include content-text(36px, 36px);
-
-    min-width: 1440px;
   }
 }
 

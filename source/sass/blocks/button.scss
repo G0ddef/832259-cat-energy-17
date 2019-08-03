@@ -46,7 +46,6 @@
   .button--add-order {
     width: 633px;
 
-    color: $white;
     font-size: 16px;
     line-height: 20px;
   }
@@ -59,7 +58,6 @@
     padding-right: 40px;
     width: 283px;
 
-    color: $white;
     font-size: 20px;
     line-height: 20px;
   }
@@ -80,11 +78,6 @@
     padding-top: 13px;
     padding-bottom: 13px;
     width: 168px;
-
-    font-size: 16px;
-    font-weight: $regular;
-    line-height: 20px;
-    text-transform: uppercase;
   }
 
   .button--add-order {
@@ -93,11 +86,6 @@
     padding-left: 45px;
     padding-right: 45px;
     width: 245px;
-
-    font-size: 16px;
-    font-weight: $regular;
-    line-height: 20px;
-    text-transform: uppercase;
   }
 
   .button--send {
@@ -105,11 +93,5 @@
     padding-top: 19px;
     padding-bottom: 19px;
     width: 570px;
-
-    color: $white;
-    font-size: 20px;
-    font-weight: $regular;
-    line-height: 20px;
-    text-transform: uppercase;
   }
 }

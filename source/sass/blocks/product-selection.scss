@@ -178,23 +178,20 @@
 
 @media (min-width: $tablet-width) {
   .product-selection {
-    width: 768px;
+    @include centring(0 auto, 708px);
   }
 
   .product-selection__title {
-    @include content-text(20px, 30px);
-
     margin: 0;
     padding-top: 50px;
-    padding-left: 70px;
+    padding-left: 40px;
     width: 340px;
-
-    color: $black;
-    text-transform: uppercase;
   }
 
   .product-selection__form {
     @include centring(0 auto, 635px);
+
+    padding-bottom: 75px;
   }
 
   .product-selection__paragraph-list {
@@ -217,9 +214,6 @@
 
   .product-selection__description {
     @include content-text(20px, 20px);
-
-    color: $black;
-    text-transform: uppercase;
   }
 
   .product-selection__text-field {
@@ -263,8 +257,6 @@
   }
 
   .product-selection__contact-cat {
-    @include centring(0 auto, 708px);
-
     padding: 0;
 
     border: none;
@@ -279,13 +271,6 @@
     padding-top: 78px;
     padding-bottom: 94px;
     width: 560px;
-
-    color: $black;
-  }
-
-  .product-selection__contact-list {
-    margin: 0;
-    padding: 0;
   }
 
   .product-selection__contact-item {
@@ -340,8 +325,6 @@
     padding-top: 70px;
     padding-bottom: 63px;
     width: 225px;
-
-    color: $black;
   }
 
   .product-selection__checkbox-list {
@@ -385,20 +368,19 @@
 
   .product-selection__note {
     @include content-text(16px, 16px);
-
-    font-family: "Arial", sans-serif;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-selection {
-    width: 1440px;
+    @include centring(0 auto, 1220px);
   }
 
   .product-selection__title {
     @include content-text(20px, 30px);
 
-    padding-left: 110px;
+    padding-top: 53px;
+    padding-left: 0;
     width: 345px;
 
     color: $black;
@@ -423,23 +405,15 @@
   }
 
   .product-selection__paragraph-list {
+    width: 570px;
     padding: 0;
 
     border: none;
   }
 
   .product-selection__paragraph-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding-bottom: 20px;
-  }
-
-  .product-selection__description {
-    @include content-text(20px, 20px);
-
-    color: $black;
-    text-transform: uppercase;
+    width: 570px;
   }
 
   .product-selection__text-field {
@@ -486,11 +460,7 @@
   }
 
   .product-selection__contact-cat {
-    @include centring(0 auto, 1220px);
-
-    margin: 0 auto;
     padding: 0;
-    width: 1220px;
 
     border: none;
   }
@@ -527,24 +497,14 @@
   }
 
   .product-selection__comment-name {
-    @include content-text(36px, 36px);
-
     padding-top: 72px;
     padding-bottom: 71px;
-
-    color: $black;
   }
 
   .product-selection__text-area {
-    @include content-text(20px, 30px);
-
-    box-sizing: border-box;
     padding: 16px;
     width: 1220px;
     height: 177px;
-
-    color: $black;
-    text-transform: uppercase;
   }
 
   .product-selection__extra-options {
@@ -552,19 +512,12 @@
   }
 
   .product-selection__additionally {
-    @include content-text(36px, 36px);
-
     padding-top: 70px;
     padding-bottom: 54px;
-
-    color: $black;
   }
 
   .product-selection__checkbox-list {
     @include centring(0 auto, 1220px);
-
-    display: flex;
-    flex-direction: row;
   }
 
   .product-selection__checkbox-item {
@@ -584,12 +537,5 @@
     width: 245px;
 
     text-align: left;
-  }
-
-  .product-selection__note {
-    @include content-text(17px, 16px);
-
-    font-family: "Arial", sans-serif;
-    color: $black;
   }
 }

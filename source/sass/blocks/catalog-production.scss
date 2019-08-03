@@ -1,8 +1,3 @@
-.catalog-production {
-  margin: 0 auto;
-  min-width: 320px;
-}
-
 .catalog-production__catalog {
   margin: 0;
   padding: 0;
@@ -36,12 +31,14 @@
 .catalog-production__stats-field {
   @include content-text(12px, 16px);
 
+  font-family: "Arial", sans-serif;
   color: $black;
 }
 
 .catalog-production__stats-value {
   @include content-text(12px, 16px);
 
+  font-family: "Arial", sans-serif;
   color: $black;
 }
 
@@ -67,15 +64,17 @@
 
 .catalog-production__sub-title {
   @include content-text(12px, 16px);
+
   padding-bottom: 24px;
 
+  font-family: "Arial", sans-serif;
   color: $black;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-production {
-    @include centring(0 auto, 768px);
+    @include centring(0 auto, 708px);
 
     margin-top: 163px;
     overflow: hidden;
@@ -164,14 +163,12 @@
   .catalog-production__stats-field {
     @include content-text(16px, 16px);
 
-    font-family: "Arial", sans-serif;
     text-align: left;
   }
 
   .catalog-production__stats-value {
     @include content-text(16px, 16px);
 
-    font-family: "Arial", sans-serif;
     text-align: right;
   }
 
@@ -180,9 +177,6 @@
     @include content-text(20px, 20px);
 
     padding-bottom: 46px;
-
-    color: $black;
-    text-transform: uppercase;
   }
 
   .catalog-production__sub-title {
@@ -190,14 +184,12 @@
     @include content-text(16px, 16px);
 
     padding-bottom: 75px;
-
-    color: $black;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-production {
-    @include centring(0 auto, 1440px);
+    @include centring(0 auto, 1220px);
 
     margin-top: 158px;
     overflow: hidden;
@@ -206,22 +198,15 @@
   .catalog-production__catalog {
     @include centring(0 auto, 1220px);
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin-bottom: -142px;
   }
 
   .catalog-production__item {
-    margin: 0;
     margin-bottom: 142px;
     margin-right: 80px;
     padding-top: 167px;
     padding-bottom: 42px;
     width: 245px;
-
-    background-color: #f2f2f2;
-    border: none;
 
     &:nth-child(2n) {
       margin-right: 80px;
@@ -230,92 +215,53 @@
     &:nth-child(4n+4) {
       margin-right: 0;
     }
+  }
 
-    &:last-child {
-      background-color: $white;
-      border-top: $border;
-      border-bottom: $border;
-    }
+  .catalog-production__wrapper {
+    @include centring(0 auto, 170px);
+  }
 
-    .catalog-production__wrapper {
+  .catalog-production__item-name {
+    @include centring(0 auto, 150px);
+
+    order: 2;
+    padding-top: 72px;
+    padding-bottom: 28px;
+  }
+
+  .catalog-production__logo-link {
+    order: 1;
+  }
+
+  .catalog-production__description {
+    padding-bottom: 33px;
+
+    & tr {
       @include centring(0 auto, 170px);
 
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 10px;
+      padding-bottom: 6px;
+
+      border-bottom: $border;
     }
 
-    .catalog-production__item-name {
-      @include centring(0 auto, 150px);
-
-      order: 2;
-      padding-top: 72px;
-      padding-bottom: 28px;
+    & tr:first-child {
+      padding-top: 0;
     }
+  }
 
-    .catalog-production__link {
-      @include content-text(20px, 20px);
+  .catalog-production__title {
+    @include centring(0 auto, 142px);
 
-      color: $black;
-      text-transform: uppercase;
-    }
+    padding-top: 160px;
+  }
 
-    .catalog-production__logo-link {
-      order: 1;
-    }
+  .catalog-production__sub-title {
+    @include centring(0 auto, 175px);
 
-    .catalog-production__description {
-      order: 3;
-      padding-bottom: 33px;
-
-      & tr {
-        @include centring(0 auto, 170px);
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 10px;
-        padding-bottom: 6px;
-
-        border-bottom: $border;
-      }
-
-      & tr:first-child {
-        padding-top: 0;
-      }
-    }
-
-    .catalog-production__stats-field {
-      @include content-text(16px, 16px);
-
-      font-family: "Arial", sans-serif;
-      text-align: left;
-    }
-
-    .catalog-production__stats-value {
-      @include content-text(16px, 16px);
-
-      font-family: "Arial", sans-serif;
-      text-align: right;
-    }
-
-    .catalog-production__title {
-      @include centring(0 auto, 142px);
-      @include content-text(20px, 20px);
-
-      padding-top: 160px;
-
-      color: $black;
-      text-transform: uppercase;
-    }
-
-    .catalog-production__sub-title {
-      @include centring(0 auto, 175px);
-      @include content-text(16px, 16px);
-
-      padding-bottom: 97px;
-
-      font-family: "Arial", sans-serif;
-      color: $black;
-    }
+    padding-bottom: 97px;
   }
 }

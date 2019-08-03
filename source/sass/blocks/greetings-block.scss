@@ -1,8 +1,6 @@
 .greetings-block {
-  margin: 0 auto;
   padding-top: 33px;
   padding-bottom: 35px;
-  min-width: 320px;
 
   border-bottom: $border;
 }
@@ -16,33 +14,24 @@
 
 @media (min-width: $tablet-width) {
   .greetings-block {
-    @include centring(0 auto, 768px);
-
-
     border: none;
   }
 
   .greetings-block__main-title {
-    @include centring(0 auto, 768px);
+    @include centring(0 auto, 708px);
     @include content-text(60px, 60px);
-
-    color: $black;
   }
 }
 
 @media (min-width: $desktop-width) {
   .greetings-block {
-    @include centring(0 auto, 1440px);
-
     padding: 0;
   }
 
   .greetings-block__main-title {
     @include centring(0 auto, 1220px);
-    @include content-text(60px, 60px);
 
-    padding: 0;
-
-    color: $black;
+    padding-top: 78px;
+    padding-left: 0;
   }
 }

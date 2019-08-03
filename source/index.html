@@ -2,29 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=320px, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Проект cat-energy</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <img class="main-header__logo-img" src="img/main-logo.svg" width="100" height="100" alt="Логотип сайта Cat-Energy">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Главное меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item site-list__item--active">
-            <a class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="#">
+          <img class="main-header__logo-img" src="img/main-logo.svg" width="100" height="100" alt="Логотип сайта Cat-Energy">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Главное меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item site-list__item--active">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-page">
       <div class="program-selection">
@@ -69,44 +71,50 @@
         <h2 class="living-example__title">Живой пример</h2>
         <div class="living-example__first-container">
           <div class="living-example__container">
-            <p class="living-example__description">Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
-              без изнуряющих тренировок! При этом он не поменял своих привычек и по-прежнему спит по 16 часов в день.</p>
             <div class="living-example__wrapper">
-              <div class="living-example__conclusion">
-                <div class="living-example__weight-time">
-                  <p class="living-example__value">5 КГ</p>
-                  <p class="living-example__specification">Снижение веса</p>
-                </div>
-                <div class="living-example__weight-time">
-                  <p class="living-example__value">60 дней</p>
-                  <p class="living-example__specification">Затрачено времени</p>
-                </div>
-              </div>
-              <div class="living-example__sub-title">
-                <b class="living-example__food-cost">Затраты на питание: <span class="living-example__price">15000 руб.</span></b>
-              </div>
+              <p class="living-example__description">Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
+                без изнуряющих тренировок! При этом он не поменял своих привычек и по-прежнему спит по 16 часов в день.</p>
             </div>
-          </div>
-          <div class="living-example__result-action">
-            <div class="living-example__slider">
-              <div class="living-example__results">
-                <img class="living-examle__cat-logo" src="img/before.jpg" width="100"  height="100" alt="До приема питания">
+            <div class="living-example__row">
+              <div class="living-example__wrapper">
+                <div class="living-example__conclusion">
+                  <div class="living-example__weight-time">
+                    <p class="living-example__value">5 КГ</p>
+                    <p class="living-example__specification">Снижение веса</p>
+                  </div>
+                  <div class="living-example__weight-time">
+                    <p class="living-example__value">60 дней</p>
+                    <p class="living-example__specification">Затрачено времени</p>
+                  </div>
+                </div>
+                <div class="living-example__sub-title">
+                  <b class="living-example__food-cost">Затраты на питание: <span class="living-example__price">15000 руб.</span></b>
+                </div>
               </div>
-              <div class="living-example__results">
-                <img class="living-examle__cat-logo" src="img/after.jpg" width="100" height="100" alt="После приема питания">
-              </div>
-              <div class="living-example__slide-list">
-                <button class="livng-example__slide-item" type="button">Было</button>
-                <button class="living-example__slide-item" type="button">Стало</button>
+              <div class="living-example__result-action">
+                <div class="living-example__slider">
+                  <div class="living-example__results">
+                    <img class="living-examle__cat-logo" src="img/before.jpg" width="100"  height="100" alt="До приема питания">
+                  </div>
+                  <div class="living-example__results">
+                    <img class="living-examle__cat-logo" src="img/after.jpg" width="100" height="100" alt="После приема питания">
+                  </div>
+                  <div class="living-example__slide-list">
+                    <button class="livng-example__slide-item" type="button">Было</button>
+                    <button class="living-example__slide-item" type="button">Стало</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="contacts">
-        <div class="contacts__our-address">
-          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__sub-title">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+      <section class="contacts contacts--index">
+        <div class="contacts__container">
+          <div class="contacts__our-address">
+            <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__sub-title">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+          </div>
         </div>
         <div class="contacts__map">
           <img class="location__map-logo" src="img/map.jpg" width="100" height="100" alt="Как нас найти">

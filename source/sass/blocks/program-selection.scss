@@ -1,6 +1,4 @@
 .program-selection {
-  min-width: 320px;
-
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% 305px;
@@ -120,28 +118,11 @@
     padding-left: 80px;
     width: 318px;
 
-    &::before {
-      content: "";
-
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 1;
-
-      display: block;
-      height: 698px;
-      width: 720px;
-
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-
     &::after {
       content: "";
 
       position: absolute;
-      right: -175px;
+      left: 80px;
       top: 150px;
 
       display: block;

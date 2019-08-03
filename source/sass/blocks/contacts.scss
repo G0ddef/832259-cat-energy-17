@@ -1,7 +1,11 @@
 .contacts {
-  margin: 0 auto;
   margin-top: 30px;
-  min-width: 320px;
+
+  background-color: $bg-gray;
+}
+
+.contacts--index {
+  background-color: $white;
 }
 
 .contacts__our-address {
@@ -26,23 +30,25 @@
   margin: 0;
   width: 140px;
 
+  font-family: "Arial", sans-serif;
   color: $black;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-top: 68px;
-    width: 768px;
+    margin: 0;
+  }
 
-    background-color: #f2f2f2;
+  .contacts__container {
+    @include centring(0 auto, 708px);
   }
 
   .contacts__our-address {
     @include centring(0 auto, 630px);
 
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    margin: 0;
   }
 
   .contacts__title {
@@ -50,9 +56,6 @@
 
     padding-top: 67px;
     padding-bottom: 62px;
-
-    color: $black;
-    text-transform: uppercase;
   }
 
   .contacts__sub-title {
@@ -60,13 +63,6 @@
 
     padding-top: 67px;
     padding-bottom: 62px;
-
-    font-family: "Arial", sans-serif;
-    color: $black;
-  }
-
-  .contacts__map {
-    @include centring (0 auto, 630px);
   }
 }
 
@@ -75,17 +71,21 @@
     position: relative;
 
     margin-top: 0;
-    width: 1440px;
+    padding-top: 100px;
     height: 399px;
+
+    background-color: $bg-gray;
+  }
+
+  .contacts__container {
+    @include centring(0 auto, 1220px);
+
+    display: block;
   }
 
   .contacts__our-address {
-    position: absolute;
-    top: 95px;
-    left: 110px;
-
-    display: flex;
     justify-content: flex-start;
+    margin: 0;
     padding-bottom: 0;
     width: 575px;
 
@@ -93,32 +93,18 @@
   }
 
   .contacts__title {
-    @include content-text(20px, 25px);
-
     padding-top: 69px;
     padding-left: 75px;
     padding-right: 94px;
     width: 160px;
-
-    color: $black;
   }
 
   .contacts__sub-title {
-    @include content-text(16px, 20px);
-
     width: 175px;
-
-    font-family: "Arial", sans-serif;
-    color: $black;
   }
 
   .contacts__city {
-    @include content-text(16px, 20px);
-
     display: block;
     padding-top: 20px;
-
-    font-family: "Arial", sans-serif;
-    color: $black;
   }
 }

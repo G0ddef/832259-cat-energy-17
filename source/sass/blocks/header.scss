@@ -1,7 +1,6 @@
 .main-header {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
 }
 
 .main-header__logo {
@@ -24,6 +23,33 @@
 @media (min-width: $desktop-width) {
   .main-header {
     @include centring(0 auto, 1220px);
+
+    position: relative;
+  }
+
+  .main-header__wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: -63px;
+      z-index: 1;
+
+      display: block;
+      height: 698px;
+      width: 720px;
+
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 698px;
+    }
   }
 
   .main-header__logo {

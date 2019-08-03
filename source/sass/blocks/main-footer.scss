@@ -1,6 +1,9 @@
 .main-footer {
-  margin: 0 auto;
-  min-width: 320px;
+  background-color: $bg-gray;
+}
+
+.main-footer__container {
+  @include centring(0 auto, 280px);
 }
 
 .main-footer__footer-logo-link {
@@ -31,8 +34,6 @@
 
 @media (min-width: $tablet-width) {
   .main-footer {
-    width: 768px;
-
     background-color: #f2f2f2;
   }
 
@@ -59,8 +60,6 @@
 
 @media (min-width: $desktop-width) {
   .main-footer {
-    width: 1440px;
-
     background-color: #f2f2f2;
   }
 
