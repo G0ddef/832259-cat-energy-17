@@ -20,6 +20,7 @@
   padding-left: 80px;
   padding-bottom: 48px;
 
+  font-family: "Arial", sans-serif;
   color: $black;
 
   &:last-child {
@@ -51,8 +52,6 @@
     padding-bottom: 75px;
     padding-left: 30px;
     width: 430px;
-
-    color: $black;
     text-align: left;
   }
 
@@ -64,9 +63,6 @@
     padding-right: 100px;
     padding-bottom: 140px;
     width: 210px;
-
-    font-family: "Arial", sans-serif;
-    color: $black;
 
     &:nth-child(2n + 2) {
       padding-right: 0;
@@ -92,8 +88,6 @@
     padding-bottom: 180px;
     padding-left: 0;
     width: 420px;
-
-    color: $black;
   }
 
   .advantages__container {
@@ -103,14 +97,9 @@
   }
 
   .advantages__description {
-    @include content-text(16px, 24px);
-
     padding-bottom: 0;
     padding-right: 80px;
     width: 245px;
-
-    font-family: "Arial", sans-serif;
-    color: $black;
 
     &:nth-child(2n + 2) {
       padding-bottom: 0;

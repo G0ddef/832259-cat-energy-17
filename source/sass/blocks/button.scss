@@ -2,6 +2,7 @@
   @include centring(0 auto, 280px);
   @include content-text(14px, 14px);
 
+  box-sizing: border-box;
   display: block;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -25,6 +26,8 @@
 
 @media (min-width: $tablet-width) {
   .button--program {
+    @include content-text(20px, 20px);
+
     position: relative;
     z-index: 2;
 
@@ -37,9 +40,7 @@
     width: 252px;
 
     font-size: 16px;
-    font-weight: $regular;
     line-height: 20px;
-    text-transform: uppercase;
   }
 
   .button--add-order {
@@ -47,9 +48,7 @@
 
     color: $white;
     font-size: 16px;
-    font-weight: $regular;
     line-height: 20px;
-    text-transform: uppercase;
   }
 
   .button--send {
@@ -62,9 +61,7 @@
 
     color: $white;
     font-size: 20px;
-    font-weight: $regular;
     line-height: 20px;
-    text-transform: uppercase;
   }
 }
 
@@ -77,11 +74,6 @@
     padding-left: 20px;
     padding-right: 20px;
     width: 243px;
-
-    font-size: 20px;
-    font-weight: $regular;
-    line-height: 20px;
-    text-transform: uppercase;
   }
 
   .button--order {
@@ -102,7 +94,6 @@
     padding-right: 45px;
     width: 245px;
 
-    color: $white;
     font-size: 16px;
     font-weight: $regular;
     line-height: 20px;

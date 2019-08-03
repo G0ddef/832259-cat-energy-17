@@ -87,10 +87,14 @@
     padding-bottom: 57px;
     padding-left: 55px;
 
+    font-family: "Arial", sans-serif;
+
     border: none;
   }
 
   .product-price__link {
+    @include content-text(20px, 20px);
+
     margin: 0;
     padding-bottom: 65px;
     padding-left: 55px;
@@ -125,13 +129,9 @@
   }
 
   .product-price__description {
-    @include content-text(16px, 24px);
-
     padding-bottom: 38px;
     padding-left: 55px;
     width: 466px;
-
-    font-family: "Arial", sans-serif;
   }
 
   .product-price__link {
