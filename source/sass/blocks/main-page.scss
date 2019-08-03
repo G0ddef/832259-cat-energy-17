@@ -7,12 +7,12 @@
 
 @media (min-width: $tablet-width) {
   .main-page {
-    width: 768px;
+    min-width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-page {
-    width: 1440px;
+    min-width: 1440px;
   }
 }

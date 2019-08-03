@@ -20,6 +20,8 @@
   @include centring(0 auto, 230px);
   @include content-text(14px, 14px);
 
+  position: relative;
+
   padding-top: 27px;
   padding-bottom: 303px;
 
