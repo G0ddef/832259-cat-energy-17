@@ -1,0 +1,21 @@
+.contaier {
+  @include centring(0 auto, 280px);
+
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    @include centring(0 auto, 708px);
+
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    @include centring(0 auto, 1220px);
+
+    padding: 0;
+  }
+}

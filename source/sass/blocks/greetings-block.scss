@@ -1,21 +1,37 @@
 .greetings-block {
   padding-top: 33px;
   padding-bottom: 35px;
-  width: $ph-width;
 
   border-bottom: $border;
 }
 
-.greetings-block--no-border {
-  border-bottom: none;
-}
-
 .greetings-block__main-title {
-  margin: $content-center;
-  width: $center;
+  @include centring(0 auto, 280px);
+  @include content-text(36px, 60px);
 
   color: $black;
-  font-size: $title;
-  font-weight: $regular;
-  line-height: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .greetings-block {
+    border: none;
+  }
+
+  .greetings-block__main-title {
+    @include centring(0 auto, 708px);
+    @include content-text(60px, 60px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .greetings-block {
+    padding: 0;
+  }
+
+  .greetings-block__main-title {
+    @include centring(0 auto, 1220px);
+
+    padding-top: 78px;
+    padding-left: 0;
+  }
 }

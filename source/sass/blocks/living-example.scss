@@ -1,74 +1,71 @@
 .living-example {
-  margin-top: 43px;
-  width: $ph-width;
-
   background-color: $bg-gray;
 }
 
 .living-example__title {
-  margin: $content-center;
+  @include centring(0 auto, 280px);
+  @include content-text(36px, 60px);
+
   padding-top: 33px;
   padding-bottom: 33px;
-  width: $center;
 
   color: $black;
-  font-size: 36px;
-  font-weight: $regular;
-  line-height: 60px;
 }
 
 .living-example__description {
-  margin: $content-center;
-  padding-bottom: 30px;
-  width: $center;
+  @include centring(0 auto, 280px);
+  @include content-text(14px, 18px);
 
+  padding-bottom: 30px;
+
+  font-family: "Arial", sans-serif;
   color: $black;
-  font-size: 14px;
-  font-weight: $regular;
-  line-height: 18px;
 }
 
 .living-example__conclusion {
+  @include centring(0 auto, 280px);
+
   display: flex;
   justify-content: space-between;
-  margin: $content-center;
   padding-bottom: 25px;
-  width: 280px;
 }
 
 .living-example__value {
+  @include content-text(24px, 24px);
+
   margin: 0;
 
   color: $black;
-  font-size: $sub-title;
-  font-weight: $regular;
-  line-height: $sub-title;
+  text-transform: uppercase;
   text-align: center;
 }
 
 .living-example__specification {
+  @include content-text(12px, 12px);
+
   margin: 0;
   padding-top: 10px;
 
+  font-family: "Arial", sans-serif;
   color: $black;
-  font-size: 12px;
-  font-weight: $regular;
-  line-height: 12px;
+  text-transform: uppercase;
   text-align: center;
 }
 
 .living-example__food-cost {
+  @include centring(0 auto, 280px);
+  @include content-text(14px, 20px);
+
   display: block;
-  margin: $content-center;
   padding-bottom: 48px;
-  width: $center;
 
   color: $black;
-  font-size: 14px;
-  font-weight: $regular;
-  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.living-example__slider {
+  @include centring(0 auto, 280px);
 }
 
 .living-example__results {
@@ -76,5 +73,190 @@
 }
 
 .living-example__slide-list {
+  @include centring(0 auto, 203px);
+
   padding-bottom: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .living-example {
+    background-color: $white;
+  }
+
+  .living-example__title {
+    @include centring(0 auto, 708px);
+    @include content-text(60px, 60px);
+
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+  }
+
+  .living-example__description {
+    @include content-text(16px, 24px);
+
+    margin: 0;
+    padding-bottom: 80px;
+    width: 680px;
+  }
+
+  .living-example__wrapper {
+    @include centring(0 auto, 708px);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .living-example__conclusion {
+    display: flex;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+    width: 366px;
+  }
+
+  .living-example__weight-time {
+    padding-right: 130px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .living-example__value {
+    @include content-text(30px, 37px);
+  }
+
+  .living-example__specification {
+    @include content-text(14px, 14px);
+  }
+
+  .living-example__food-cost {
+    @include content-text(20px, 20px);
+
+    padding: 0;
+    width: 230px;
+
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  .living-example__result-action {
+    margin-top: 250px;
+
+    background-color: $bg-gray;
+  }
+
+  .living-example__slider {
+    padding-top: 340px;
+    padding-bottom: 73px;
+    width: 580px;
+  }
+
+  .living-example__results {
+    padding-left: 82px;
+    width: 468px;
+  }
+
+  .living-example__slide-list {
+    @include centring(0 auto, 576px);
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .living-example {
+    margin-top: 140px;
+  }
+
+  .living-example__first-container {
+    background-color: $bg-gray;
+  }
+
+  .living-example__container {
+    margin: 0 auto;
+    padding-bottom: 0;
+    width: 1220px;
+  }
+
+  .living-example__title {
+    @include centring(0 auto, 1220px);
+
+    padding: 0;
+    padding-bottom: 67px;
+
+    background-color: $white;
+  }
+
+  .living-example__description {
+    padding-top: 77px;
+    padding-bottom: 0;
+    width: 440px;
+  }
+
+  .living-example__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .living-example__wrapper {
+    display: block;
+    padding-top: 92px;
+    padding-right: 210px;
+    margin: 0;
+    width: 440px;
+  }
+
+  .living-example__conclusion {
+    padding-left: 33px;
+  }
+
+  .living-example__weight-time {
+    padding-right: 95px;
+  }
+
+  .living-example__sub-title {
+    padding-top: 58px;
+  }
+
+  .living-example__food-cost {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    width: 400px;
+
+    text-align: left;
+  }
+
+  .living-example__price {
+    @include content-text(20px, 20px);
+
+    padding-left: 50px;
+
+    color: $black;
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  .living-example__result-action {
+    margin: 0;
+    width: 570px;
+
+    background-color: #f2f2f2;
+  }
+
+  .living-example__slider {
+    padding-top: 60px;
+    padding-bottom: 0;
+    width: 570px;
+  }
+
+  .living-example__slide-list {
+    @include centring(0 auto, 570px);
+  }
 }

@@ -1,14 +1,13 @@
 .button {
+  @include centring(0 auto, 280px);
+  @include content-text(14px, 14px);
+
+  box-sizing: border-box;
   display: block;
-  margin: $content-center;
   padding-top: 13px;
   padding-bottom: 13px;
-  width: 280px;
 
   color: $white;
-  font-size: $description;
-  font-weight: $regular;
-  line-height: $description;
   text-transform: uppercase;
   text-align: center;
 
@@ -20,9 +19,79 @@
 }
 
 .button--gray {
-  display: block;
-
   color: #444444;
 
   background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .button--program {
+    @include content-text(20px, 20px);
+
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+    margin-left: 120px;
+    width: 245px;
+  }
+
+  .button--order {
+    width: 252px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .button--add-order {
+    width: 633px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .button--send {
+    margin: 0;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 37px;
+    padding-right: 40px;
+    width: 283px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--program {
+    margin-top: 55px;
+    margin-left: 80px;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 243px;
+  }
+
+  .button--order {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 168px;
+  }
+
+  .button--add-order {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    width: 245px;
+  }
+
+  .button--send {
+    margin: 0;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    width: 570px;
+  }
 }
