@@ -23,6 +23,8 @@ body {
 
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  overflow-y: scroll;
 
   font-family: "Oswald", "Arial", sans-serif;
   color: $black;
