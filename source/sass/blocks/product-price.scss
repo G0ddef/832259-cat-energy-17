@@ -24,8 +24,9 @@
   @include centring(0 auto, 240px);
   @include content-text(24px, 37px);
 
-  padding-top: 39px;
-  padding-bottom: 39px;
+  padding-top: 30px;
+  padding-bottom: 26px;
+  padding-left: 90px;
 
   color: $black;
   text-transform: uppercase;
@@ -35,7 +36,7 @@
   @include centring(0 auto, 240px);
   @include content-text(14px, 18px);
 
-  padding-bottom: 24px;
+  padding-bottom: 23px;
 
   font-family: "Arial", sans-serif;
   color: $black;
@@ -59,7 +60,7 @@
   .product-price {
     @include centring(0 auto, 708px);
 
-    margin-top: 530px;
+    margin-top: 529px;
   }
 
   .product-price__list {
@@ -74,9 +75,9 @@
     @include content-text(36px, 37px);
 
     margin: 0;
-    padding-top: 85px;
-    padding-bottom: 34px;
-    padding-left: 55px;
+    padding-top: 77px;
+    padding-bottom: 23px;
+    padding-left: 53px;
     width: 217px;
   }
 
@@ -85,19 +86,25 @@
 
     margin: 0;
     padding-bottom: 57px;
-    padding-left: 55px;
+    padding-left: 52px;
+    width: 372px;
 
     font-family: "Arial", sans-serif;
 
     border: none;
+
+    &--width {
+      width: 344px;
+    }
   }
 
   .product-price__link {
     @include content-text(20px, 20px);
 
     margin: 0;
-    padding-bottom: 65px;
-    padding-left: 55px;
+    padding-top: 0;
+    padding-bottom: 61px;
+    padding-left: 53px;
     width: 157px;
   }
 }
@@ -106,7 +113,7 @@
   .product-price {
     @include centring(0 auto, 1220px);
 
-    margin-top: 266px;
+    margin-top: 270px;
   }
 
   .product-price__list {
@@ -123,20 +130,20 @@
   }
 
   .product-price__title {
-    padding-top: 83px;
-    padding-bottom: 82px;
-    padding-left: 211px;
+    padding-top: 77px;
+    padding-bottom: 74px;
+    padding-left: 214px;
   }
 
   .product-price__description {
-    padding-bottom: 38px;
-    padding-left: 55px;
+    padding-bottom: 32px;
+    padding-left: 52px;
     width: 466px;
   }
 
   .product-price__link {
     padding-top: 0;
-    padding-bottom: 64px;
-    padding-left: 55px;
+    padding-bottom: 59px;
+    padding-left: 53px;
   }
 }

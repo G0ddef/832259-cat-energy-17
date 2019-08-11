@@ -7,19 +7,23 @@
   @include content-text(36px, 60px);
 
   padding-top: 33px;
-  padding-bottom: 33px;
+  padding-bottom: 21px;
 
   color: $black;
 }
 
 .living-example__description {
-  @include centring(0 auto, 280px);
+  @include centring(0 auto, 279px);
   @include content-text(14px, 18px);
 
-  padding-bottom: 30px;
+  padding-bottom: 26px;
 
   font-family: "Arial", sans-serif;
   color: $black;
+
+  & br {
+    display: none;
+  }
 }
 
 .living-example__conclusion {
@@ -27,29 +31,53 @@
 
   display: flex;
   justify-content: space-between;
-  padding-bottom: 25px;
+  padding-bottom: 35px;
+}
+
+.living-example__weight-time {
+  position: relative;
 }
 
 .living-example__value {
   @include content-text(24px, 24px);
 
+  position: relative;
+  z-index: 1;
+
+  box-sizing: border-box;
   margin: 0;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 124px;
 
   color: $black;
   text-transform: uppercase;
   text-align: center;
+
+  border: $border;
 }
 
 .living-example__specification {
   @include content-text(12px, 12px);
 
+  position: absolute;
+  z-index: 2;
+  bottom: -15px;
+  left: 17px;
+
   margin: 0;
-  padding-top: 10px;
+  padding-left: 13px;
+  padding-right: 15px;
+  width: 60px;
 
   font-family: "Arial", sans-serif;
   color: $black;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: lowercase;
+
+  background-color: $bg-gray;
 }
 
 .living-example__food-cost {
@@ -64,6 +92,7 @@
   text-align: center;
 }
 
+
 .living-example__slider {
   @include centring(0 auto, 280px);
 }
@@ -75,7 +104,46 @@
 .living-example__slide-list {
   @include centring(0 auto, 203px);
 
-  padding-bottom: 38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-top: 168px;
+  padding-bottom: 32px;
+}
+
+.living-example__slide-item {
+  @include content-text(16px, 20px);
+
+  font-family: inherit;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  border: none;
+
+  &:last-child {
+    margin-right: -7px;
+  }
+}
+
+.living-example__toggle {
+  margin-top: 3px;
+  width: 86px;
+  height: 12px;
+
+  background-color: $white;
+  border: 1px solid #cdcdcd;
+  border-radius: 15px;
+}
+
+.living-example__range {
+  margin: 3px;
+  margin-left: 8px;
+  width: 40%;
+  height: 6px;
+
+  background-color: #68b738;
+  border-radius: 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -87,16 +155,15 @@
     @include centring(0 auto, 708px);
     @include content-text(60px, 60px);
 
-    padding-top: 50px;
-    padding-bottom: 60px;
-    padding-left: 30px;
+    padding-top: 46px;
+    padding-bottom: 61px;
   }
 
   .living-example__description {
     @include content-text(16px, 24px);
 
     margin: 0;
-    padding-bottom: 80px;
+    padding-bottom: 54px;
     width: 680px;
   }
 
@@ -117,7 +184,7 @@
   }
 
   .living-example__weight-time {
-    padding-right: 130px;
+    padding-right: 40px;
 
     &:last-child {
       padding-right: 0;
@@ -126,31 +193,57 @@
 
   .living-example__value {
     @include content-text(30px, 37px);
+
+    padding-bottom: 18px;
+    width: 163px;
   }
 
   .living-example__specification {
     @include content-text(14px, 14px);
+
+    top: 62px;
+    left: 11px;
+
+    padding: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 143px;
+    box-sizing: border-box;
+
+    background-color: $white;
+
+    &--padding {
+      left: 24px;
+
+      padding: 0;
+      width: 114px;
+    }
+  }
+
+  .living-example__sub-title {
+    padding-top: 8px;
+    padding-right: 2px;
   }
 
   .living-example__food-cost {
-    @include content-text(20px, 20px);
+    @include content-text(20px, 28px);
 
     padding: 0;
-    width: 230px;
+    width: 196px;
 
     text-transform: uppercase;
     text-align: right;
   }
 
   .living-example__result-action {
-    margin-top: 250px;
+    margin-top: 255px;
 
     background-color: $bg-gray;
   }
 
   .living-example__slider {
-    padding-top: 340px;
-    padding-bottom: 73px;
+    padding-top: 278px;
+    padding-bottom: 69px;
     width: 580px;
   }
 
@@ -160,17 +253,70 @@
   }
 
   .living-example__slide-list {
-    @include centring(0 auto, 576px);
-
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0;
+    padding-left: 4px;
+    margin: 0;
+    width: 576px;
+  }
+
+  .living-example__slide-item {
+    @include content-text(20px, 20px);
+
+    margin-right: 25px;
+    padding: 0;
+    padding-bottom: 5px;
+
+    border-bottom: 1px dotted #dcdcdc;
+
+    &:last-child {
+      margin-left: 20px;
+    }
+  }
+
+  .living-example__toggle {
+    margin-top: 7px;
+    width: 428px;
+    height: 6px;
+
+    background-color: #dcdcdc;
+    border: none;
+  }
+
+  .living-example__range {
+    position: relative;
+
+    margin-top: -14px;
+    margin-left: 197px;
+    width: 32px;
+    height: 32px;
+
+    border: $border;
+    background-color: $white;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: 12px;
+      right: 12px;
+
+      display: block;
+      width: 8px;
+      height: 8px;
+
+      background-color: $green;
+      border-radius: 50%;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .living-example {
-    margin-top: 140px;
+    margin-top: 130px;
   }
 
   .living-example__first-container {
@@ -179,7 +325,7 @@
 
   .living-example__container {
     margin: 0 auto;
-    padding-bottom: 0;
+    padding-bottom: 60px;
     width: 1220px;
   }
 
@@ -187,15 +333,19 @@
     @include centring(0 auto, 1220px);
 
     padding: 0;
-    padding-bottom: 67px;
+    padding-bottom: 72px;
 
     background-color: $white;
   }
 
   .living-example__description {
-    padding-top: 77px;
+    padding-top: 71px;
     padding-bottom: 0;
     width: 440px;
+
+    & br {
+      display: inline;
+    }
   }
 
   .living-example__row {
@@ -206,18 +356,21 @@
 
   .living-example__wrapper {
     display: block;
-    padding-top: 92px;
     padding-right: 210px;
     margin: 0;
     width: 440px;
   }
 
   .living-example__conclusion {
-    padding-left: 33px;
+    padding-top: 69px;
   }
 
   .living-example__weight-time {
-    padding-right: 95px;
+    padding-right: 40px;
+  }
+
+  .living-example__specification {
+    background-color: $bg-gray;
   }
 
   .living-example__sub-title {
@@ -236,7 +389,7 @@
   .living-example__price {
     @include content-text(20px, 20px);
 
-    padding-left: 50px;
+    padding-left: 60px;
 
     color: $black;
     text-transform: uppercase;
@@ -258,5 +411,8 @@
 
   .living-example__slide-list {
     @include centring(0 auto, 570px);
+
+    padding-top: 51px;
+    padding-left: 0;
   }
 }

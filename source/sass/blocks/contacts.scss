@@ -1,7 +1,11 @@
 .contacts {
-  margin-top: 30px;
+  padding-top: 29px;
 
   background-color: $bg-gray;
+
+  &--form {
+    margin-top: 32px;
+  }
 }
 
 .contacts--index {
@@ -12,7 +16,7 @@
   @include centring(0 auto, 280px);
 
   display: flex;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .contacts__title {
@@ -22,6 +26,7 @@
   width: 140px;
 
   color: $black;
+  text-transform: uppercase;
 }
 
 .contacts__sub-title {
@@ -34,8 +39,15 @@
   color: $black;
 }
 
+.contacts__map {
+  height: 363px;
+
+  background-color: $bg-gray;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
+    padding: 0;
     margin: 0;
   }
 
@@ -54,25 +66,39 @@
   .contacts__title {
     @include content-text(20px, 25px);
 
-    padding-top: 67px;
-    padding-bottom: 62px;
+    padding-top: 64px;
+    padding-bottom: 55px;
+    padding-left: 3px;
+    width: 156px;
   }
 
   .contacts__sub-title {
     @include content-text(16px, 20px);
 
-    padding-top: 67px;
-    padding-bottom: 62px;
+    padding-top: 64px;
+    padding-bottom: 55px;
+    padding-right: 3px;
+    width: 155px;
+
+    text-align: right;
+  }
+
+  .contacts__city {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .contacts__map {
+    height: 396px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    position: relative;
-
+    display: flex;
+    flex-direction: column;
     margin-top: 0;
-    padding-top: 100px;
-    height: 399px;
+    height: 402px;
 
     background-color: $bg-gray;
   }
@@ -80,31 +106,46 @@
   .contacts__container {
     @include centring(0 auto, 1220px);
 
-    display: block;
+    position: relative;
   }
 
   .contacts__our-address {
+    position: absolute;
+    top: 95px;
+    left: 0;
+
     justify-content: flex-start;
     margin: 0;
     padding-bottom: 0;
-    width: 575px;
+    width: 570px;
 
     background-color: $white;
   }
 
   .contacts__title {
-    padding-top: 69px;
-    padding-left: 75px;
-    padding-right: 94px;
+    padding-top: 65px;
+    padding-bottom: 59px;
+    padding-left: 76px;
+    padding-right: 91px;
     width: 160px;
   }
 
   .contacts__sub-title {
+    padding-top: 63px;
+    padding-bottom: 59px;
     width: 175px;
+
+    text-align: left;
   }
 
   .contacts__city {
     display: block;
     padding-top: 20px;
+  }
+
+  .contacts__map {
+    width: 1220px;
+    margin: 0 auto;
+    height: 400px;
   }
 }

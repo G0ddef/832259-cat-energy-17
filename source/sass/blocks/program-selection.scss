@@ -8,7 +8,7 @@
   @include centring(0 auto, 280px);
   @include content-text(36px, 36px);
 
-  padding-top: 25px;
+  padding-top: 28px;
 
   color: $white;
   text-align: center;
@@ -20,8 +20,8 @@
 
   position: relative;
 
-  padding-top: 27px;
-  padding-bottom: 303px;
+  padding-top: 24px;
+  padding-bottom: 300px;
 
   color: $white;
   text-transform: uppercase;
@@ -32,13 +32,13 @@
 
     position: absolute;
     margin: auto;
-    top: 70px;
-    left: 0;
+    top: 66px;
+    left: -25px;
     right: 0;
 
     display: block;
-    width: 220px;
-    height: 256px;
+    width: 280px;
+    height: 340px;
 
     background-image: url("../img/index-can-mobile@1x.png");
     background-repeat: no-repeat;
@@ -57,8 +57,8 @@
     @include content-text(60px, 60px);
 
     margin: 0;
-    margin-left: 120px;
     padding-top: 58px;
+    padding-left: 88px;
     width: 417px;
 
     color: $black;
@@ -69,9 +69,9 @@
     @include content-text(20px, 20px);
 
     margin: 0;
-    padding-left: 120px;
-    padding-top: 50px;
+    padding-top: 38px;
     padding-bottom: 30px;
+    padding-left: 88px;
     width: 290px;
 
     color: $black;
@@ -82,17 +82,17 @@
       content: "";
 
       position: absolute;
-      top: 100px;
-      left: 0;
+      top: 78px;
+      left: -1px;
       z-index: 1;
 
       display: block;
-      width: 495px;
-      height: 600px;
+      width: 654px;
+      height: 607px;
 
       background-image: url("../img/index-can-tablet@1x.jpg");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
     }
   }
 }
@@ -104,7 +104,7 @@
 
   .program-selection__title {
     margin: 0;
-    padding-top: 110px;
+    padding-top: 127px;
     padding-left: 80px;
     width: 470px;
 
@@ -122,16 +122,16 @@
       content: "";
 
       position: absolute;
-      left: 80px;
-      top: 150px;
+      top: 142px;
+      left: 214px;
 
       display: block;
-      height: 475px;
-      width: 405px;
+      width: 529px;
+      height: 495px;
 
       background-image: url("../img/index-can-desktop@1x.png");
       background-repeat: no-repeat;
-      background-size: 405px 475px;
+      background-size: cover;
     }
   }
 }
