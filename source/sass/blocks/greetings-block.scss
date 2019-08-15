@@ -1,8 +1,14 @@
 .greetings-block {
-  padding-top: 33px;
-  padding-bottom: 35px;
+  padding-top: 17px;
+  padding-bottom: 26px;
 
   border-bottom: $border;
+
+  &--form {
+    padding-bottom: 11px;
+
+    border: none;
+  }
 }
 
 .greetings-block__main-title {
@@ -14,6 +20,8 @@
 
 @media (min-width: $tablet-width) {
   .greetings-block {
+    padding-top: 58px;
+
     border: none;
   }
 
@@ -31,7 +39,7 @@
   .greetings-block__main-title {
     @include centring(0 auto, 1220px);
 
-    padding-top: 78px;
+    padding-top: 86px;
     padding-left: 0;
   }
 }

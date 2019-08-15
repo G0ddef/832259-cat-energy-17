@@ -1,12 +1,13 @@
 .button {
   @include centring(0 auto, 280px);
-  @include content-text(14px, 14px);
+  @include content-text(14px, 18px);
 
   box-sizing: border-box;
   display: block;
   padding-top: 13px;
   padding-bottom: 13px;
 
+  font-family: "Oswald", "Arial", sans-serif;
   color: $white;
   text-transform: uppercase;
   text-align: center;
@@ -15,13 +16,45 @@
 }
 
 .button--green {
-  background-color: $btn-green;
+  background-color: $green;
+
+  &:active {
+    color: rgba(250, 250, 250, 0.3);
+
+    background-color: $green;
+  }
 }
 
 .button--gray {
   color: #444444;
 
   background-color: #f2f2f2;
+}
+
+.button--order {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  width: 280px;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--add-order {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  width: 280px;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--send {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,28 +65,32 @@
     z-index: 2;
 
     margin: 0;
-    margin-left: 120px;
+    margin-top: 17px;
+    margin-left: 89px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     width: 245px;
   }
 
   .button--order {
-    width: 252px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 249px;
 
-    font-size: 16px;
-    line-height: 20px;
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 
   .button--add-order {
+    padding-top: 11px;
     width: 633px;
-
-    font-size: 16px;
-    line-height: 20px;
   }
 
   .button--send {
     margin: 0;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     padding-left: 37px;
     padding-right: 40px;
     width: 283px;
@@ -64,19 +101,31 @@
 }
 
 @media (min-width: $desktop-width) {
+  .button--green {
+    &:hover:not(:disabled) {
+      background-color: #5eaa2f;
+    }
+  }
+
+  .button--gray {
+    &:hover:not(:disabled) {
+      background-color: #ebebeb;
+    }
+  }
+
   .button--program {
-    margin-top: 55px;
+    margin-top: 53px;
     margin-left: 80px;
-    padding-top: 17px;
+    padding-top: 14px;
     padding-bottom: 16px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 243px;
+    width: 245px;
   }
 
   .button--order {
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 168px;
   }
 
@@ -90,8 +139,8 @@
 
   .button--send {
     margin: 0;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    width: 570px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    width: 569px;
   }
 }
