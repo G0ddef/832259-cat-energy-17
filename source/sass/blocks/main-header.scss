@@ -66,7 +66,7 @@
 
     &--no-img {
       &::before {
-        background-image: none;
+        display: none;
       }
     }
   }
