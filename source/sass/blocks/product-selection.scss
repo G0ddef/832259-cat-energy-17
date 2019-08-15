@@ -95,12 +95,18 @@
 }
 
 .product-selection__text-field {
+  @include content-text(16px, 18px);
+
   box-sizing: border-box;
   height: 42px;
   padding-top: 17px;
   padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #444444;
+  text-transform: uppercase;
 
   border: $border;
 
@@ -162,14 +168,6 @@
   }
 }
 
-.product-selection__radio-button:focus {
-  display: none;
-}
-
-.product-selection__radio-button:active {
-  display: none;
-}
-
 .product-selection__radio-button:checked + .product-selection__description--program-padding {
   &::before {
     content: "";
@@ -200,6 +198,14 @@
     background-color: $green;
     border-radius: 50%;
   }
+}
+
+.product-selection__radio-button:active + .product-selection__description--program-padding {
+  opacity: 0.3;
+}
+
+.product-selection__checkbox:active + .product-selection__description--checkbox-padding {
+  opacity: 0.3;
 }
 
 .product-selection__contact-cat {
@@ -436,6 +442,8 @@
   }
 
   .product-selection__text-field {
+    @include content-text(20px, 20px);
+
     height: 50px;
 
     border: $border;
@@ -443,23 +451,39 @@
     &::placeholder {
       @include content-text(20px, 20px);
     }
-  }
 
-  .product-selection__text-field--name {
-    padding-top: 21px;
-    padding-left: 19px;
-    width: 565px;
-  }
+    &--name {
+      padding-top: 21px;
+      padding-left: 19px;
+      width: 565px;
+    }
 
-  .product-selection__text-field--weight {
-    padding-left: 19px;
-    width: 536px;
-  }
+    &--weight {
+      padding-left: 19px;
+      width: 536px;
+    }
 
-  .product-selection__text-field--age {
-    padding-top: 22px;
-    padding-left: 18px;
-    width: 495px;
+    &--age {
+      padding-top: 22px;
+      padding-left: 18px;
+      width: 495px;
+    }
+
+    &:hover {
+      border: 1px solid #cdcdcd;
+    }
+
+    &:active {
+      border: 1px solid #444444;
+    }
+
+    &:invalid:not(:placeholder-shown) {
+      border: 1px solid #ff8282;
+    }
+
+    &:required:valid {
+      border: $border;
+    }
   }
 
   .product-selection__program-selection {
@@ -507,6 +531,19 @@
 
       width: 18px;
       height: 18px;
+    }
+  }
+
+
+  .product-selection__radio-button:hover + .product-selection__description--program-padding {
+    &::before {
+      border: 1px solid #bcbcbc;
+    }
+  }
+
+  .product-selection__checkbox:hover + .product-selection__description--checkbox-padding {
+    &::before {
+      border: 1px solid #bcbcbc;
     }
   }
 

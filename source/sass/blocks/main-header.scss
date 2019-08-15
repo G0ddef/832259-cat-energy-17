@@ -60,7 +60,14 @@
 
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 50%;
+      background-position: left top;
+    }
+
+    &--no-img {
+      &::before {
+        background-image: none;
+      }
     }
   }
 

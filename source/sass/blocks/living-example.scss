@@ -124,6 +124,10 @@
   &:last-child {
     margin-right: -7px;
   }
+
+  &:disabled {
+    border: none;
+  }
 }
 
 .living-example__toggle {
@@ -268,10 +272,18 @@
     padding: 0;
     padding-bottom: 5px;
 
-    border-bottom: 1px dotted #dcdcdc;
+    border-bottom: 1px dotted #bebebe;
 
     &:last-child {
       margin-left: 20px;
+    }
+
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active {
+      border-bottom: none;
     }
   }
 
@@ -310,6 +322,14 @@
 
       background-color: $green;
       border-radius: 50%;
+    }
+
+    &:hover {
+      border: 1px solid #cbcbcb;
+    }
+
+    &:active {
+      border: 1px solid $green;
     }
   }
 }
