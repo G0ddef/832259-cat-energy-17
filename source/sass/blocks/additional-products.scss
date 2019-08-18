@@ -79,10 +79,6 @@
 }
 
 .additional-products__present {
-  @include centring(0 auto, 320px);
-}
-
-.additional-products__present-wrapper {
   margin-top: 39px;
   margin-bottom: 35px;
   width: 280px;
@@ -90,11 +86,17 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .additional-products__present-order-now {
   @include centring (0 auto, 162px);
   @include content-text (16px, 20px);
+
+  position: relative;
 
   padding-top: 188px;
   padding-bottom: 41px;
@@ -102,6 +104,22 @@
   font-family: "Arial", sans-serif;
   color: $white;
   text-align: center;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 65px;
+    left: 54px;
+
+    display: block;
+    width: 55px;
+    height: 60px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -218,15 +236,16 @@
   }
 
   .additional-products__present {
-    padding-top: 71px;
-    width: 708px;
-  }
-
-  .additional-products__present-wrapper {
     @include centring(0 auto, 708px);
+
+    margin-top: 73px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .additional-products__present-order-now {
@@ -236,6 +255,12 @@
     width: 183px;
 
     text-align: left;
+
+    &::before {
+      content: "";
+
+      left: -10px;
+    }
   }
 }
 
@@ -315,13 +340,13 @@
     margin: 0;
     padding-top: 0;
     width: 245px;
-  }
-
-  .additional-products__present-wrapper {
-    width: 245px;
 
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .additional-products__present-order-now {
@@ -332,5 +357,11 @@
     padding-bottom: 41px;
 
     text-align: center;
+
+    &::before {
+      content: "";
+
+      left: 54px;
+    }
   }
 }

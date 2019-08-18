@@ -33,13 +33,13 @@
 
 @media (min-width: $desktop-width) {
   .greetings-block {
-    padding: 0;
+    padding-top: 76px;
+    padding-bottom: 0;
   }
 
   .greetings-block__main-title {
     @include centring(0 auto, 1220px);
 
-    padding-top: 86px;
     padding-left: 0;
   }
 }
