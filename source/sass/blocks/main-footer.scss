@@ -7,11 +7,10 @@
 }
 
 .main-footer__footer-logo-link {
-  @include centring(0 auto, 280px);
-
   display: block;
+  padding-top: 34px;
   padding-bottom: 32px;
-  height: 60px;
+  padding-left: 75px;
 
   border-bottom: $border;
 }
@@ -59,11 +58,13 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 69px;
+    padding-top: 63px;
   }
 
   .main-footer__footer-logo-link {
     margin: 0;
+    padding-top: 0;
+    padding-left: 0;
     padding-bottom: 24px;
     width: 132px;
   }
@@ -77,6 +78,7 @@
 
   .main-footer__copyright {
     margin: 0;
+    padding-top: 5px;
     padding-bottom: 24px;
     width: 162px;
   }
@@ -102,7 +104,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 65px;
+    padding-top: 56px;
   }
 
   .main-footer__footer-logo-link {
@@ -111,6 +113,8 @@
 
   .main-footer__company-link {
     @include content-text(16px, 20px);
+
+    padding-top: 2px;
 
     font-family: "Arial", sans-serif;
     color: $black;

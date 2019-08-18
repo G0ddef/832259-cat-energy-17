@@ -116,6 +116,7 @@
     font-family: "Oswald", "Arial", sans-serif;
     color: #444444;
     text-transform: uppercase;
+    opacity: 1;
   }
 
   &--name {
@@ -240,7 +241,8 @@
 }
 
 .product-selection__contact-list {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
   padding: 0;
 }
 
@@ -448,10 +450,6 @@
 
     border: $border;
 
-    &::placeholder {
-      @include content-text(20px, 20px);
-    }
-
     &--name {
       padding-top: 21px;
       padding-left: 19px;
@@ -467,6 +465,21 @@
       padding-top: 22px;
       padding-left: 18px;
       width: 495px;
+    }
+
+    &--mail {
+      padding-top: 21px;
+      padding-left: 21px;
+      width: 550px;
+    }
+
+    &--tel {
+      padding-left: 21px;
+      width: 536px;
+    }
+
+    &::placeholder {
+      @include content-text(20px, 20px);
     }
 
     &:hover {
@@ -547,6 +560,14 @@
     }
   }
 
+  .product-selection__radio-button:focus + .product-selection__description--program-padding {
+    outline: 2px ridge #81b3d2;
+  }
+
+  .product-selection__checkbox:focus + .product-selection__description--checkbox-padding {
+    outline: 2px ridge #81b3d2;
+  }
+
   .product-selection__contact-cat {
     margin: 0;
     padding: 0;
@@ -590,17 +611,6 @@
     padding-bottom: 23px;
     align-items: center;
     width: 631px;
-  }
-
-  .product-selection__text-field--mail {
-    padding-top: 21px;
-    padding-left: 21px;
-    width: 550px;
-  }
-
-  .product-selection__text-field--tel {
-    padding-left: 21px;
-    width: 536px;
   }
 
   .product-selection__your-comment {
@@ -798,24 +808,32 @@
 
   .product-selection__text-field {
     box-sizing: border-box;
-    padding-top: 22px;
+    padding-top: 13px;
     padding-left: 17px;
     padding-right: 20px;
     height: 54px;
 
     border: $border;
-  }
 
-  .product-selection__text-field--name {
-    width: 506px;
-  }
+    &--name {
+      width: 506px;
+    }
 
-  .product-selection__text-field--weight {
-    width: 473px;
-  }
+    &--weight {
+      width: 473px;
+    }
 
-  .product-selection__text-field--age {
-    width: 434px;
+    &--age {
+      width: 434px;
+    }
+
+    &--mail {
+      width: 487px;
+    }
+
+    &--tel {
+      width: 471px;
+    }
   }
 
   .product-selection__program-selection {
@@ -864,7 +882,6 @@
   }
 
   .product-selection__contact-list {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -873,14 +890,6 @@
     padding: 0;
     padding-right: 80px;
     width: 570px;
-  }
-
-  .product-selection__text-field--mail {
-    width: 487px;
-  }
-
-  .product-selection__text-field--tel {
-    width: 471px;
   }
 
   .product-selection__your-comment {
