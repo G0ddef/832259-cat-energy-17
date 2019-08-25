@@ -1,9 +1,16 @@
+
+.main-nav__toggle-wrapper {
+  @include centring(0 auto, 280px);
+
+  position: relative;
+}
+
 .main-nav__toggle {
   content: "";
 
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -63px;
+  right: -21px;
 
   display: block;
   width: 70px;
@@ -30,8 +37,8 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: 0;
+  top: -63px;
+  right: -21px;
 
   &::before,
   &::after {
@@ -89,6 +96,7 @@
   padding: 0;
 
   border-top: $border;
+  list-style: none;
 }
 
 .main-nav__item {
@@ -136,7 +144,7 @@
 
     border: none;
 
-    &:last-child {
+    &:nth-child(3n + 3) {
       padding-left: 15px;
       padding-right: 0;
     }
@@ -154,6 +162,12 @@
     }
 
     &:hover:not(.main-nav__link--active):not(.main-nav__link--active-inner) {
+      color: #111111;
+
+      opacity: 0.6;
+    }
+
+    &:focus:not(.main-nav__link--active):not(.main-nav__link--active-inner) {
       color: #111111;
 
       opacity: 0.6;
@@ -185,7 +199,7 @@
     padding: 0;
     padding-right: 34px;
 
-    &:last-child {
+    &:nth-child(3n + 3) {
       padding-left: 0;
       padding-right: 0;
     }
@@ -197,6 +211,12 @@
     color: $white;
 
     &:hover:not(.main-nav__link--active):not(.main-nav__link--active-inner) {
+      color: $white;
+
+      opacity: 0.6;
+    }
+
+    &:focus:not(.main-nav__link--active):not(.main-nav__link--active-inner) {
       color: $white;
 
       opacity: 0.6;
@@ -216,6 +236,12 @@
       color: $black;
 
       &:hover:not(.main-nav__link--active-inner):not(.main-nav__link--active) {
+        color: #111111;
+
+        opacity: 0.6;
+      }
+
+      &:focus:not(.main-nav__link--active-inner):not(.main-nav__link--active) {
         color: #111111;
 
         opacity: 0.6;

@@ -52,6 +52,12 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
   }
+
+  & iframe {
+    width: 100%;
+
+    border: none;
+  }
 }
 
 @media (min-width: $tablet-width) {

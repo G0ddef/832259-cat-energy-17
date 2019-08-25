@@ -8,18 +8,16 @@
   position: relative;
 
   margin: 0;
-  padding-top: 29px;
+  padding-top: 6px;
   padding-bottom: 33px;
   width: 247px;
 
   color: $black;
 
-  border-bottom: $border;
-
   &::after {
     content: "";
     position: absolute;
-    top: 49%;
+    top: 30%;
     right: 0;
     transform: translateX(100%);
 
@@ -37,11 +35,16 @@
   @include centring(0 auto, 280px);
 
   padding: 0;
+
+  list-style: none;
 }
 
 .additional-products__item {
   padding-bottom: 17px;
 
+  margin-top: -1px;
+
+  border-top: $border;
   border-bottom: $border;
 }
 
@@ -86,6 +89,7 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $green;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
@@ -137,17 +141,15 @@
     @include content-text(36px, 36px);
 
     margin: 0;
-    padding-top: 0;
+    padding-top: 3px;
     padding-bottom: 78px;
     padding-left: 37px;
     width: 374px;
 
-    border-bottom: none;
-
     &::before {
       content: "";
       position: absolute;
-      top: 16%;
+      top: 20%;
       left: 0;
       transform: translateX(-100%);
 
@@ -159,7 +161,7 @@
     &::after {
       content: "";
 
-      top: 16%;
+      top: 20%;
     }
   }
 

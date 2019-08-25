@@ -3,14 +3,15 @@
   flex-direction: column;
 }
 
+
 .main-header__logo {
+  @include centring(0 auto, 280px);
+
   display: block;
-  padding-left: 20px;
-  width: 215px;
 }
 
-.main-header__wrapper {
-  position: relative;
+.main-header__logo-img:active {
+  opacity: 0.6;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,6 +31,18 @@
 
   .main-header__logo-img {
     width: 174px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .main-header__wrapper {
@@ -42,10 +55,53 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-header {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: 1;
+
+      display: block;
+      height: 694px;
+      width: 100vw;
+
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 50% 100%;
+      background-position: left top;
+      background-color: $green;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
+
+    &--no-img {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
   .main-header__logo {
     margin: 0;
     padding-top: 50px;
     padding-left: 0;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .main-header__logo-img {
@@ -59,33 +115,5 @@
 
     display: flex;
     justify-content: space-between;
-
-    &::before {
-      content: "";
-
-      position: absolute;
-      top: 0;
-      left: 50%;
-      z-index: 1;
-
-      display: block;
-      height: 695px;
-      width: 100vw;
-
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: 50%;
-      background-position: left top;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-      }
-    }
-
-    &--no-img {
-      &::before {
-        display: none;
-      }
-    }
   }
 }
