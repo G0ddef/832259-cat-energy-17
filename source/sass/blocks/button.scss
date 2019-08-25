@@ -21,7 +21,7 @@
   &:active {
     color: rgba(250, 250, 250, 0.3);
 
-    background-color: $green;
+    background-color: #5eaa2f;
   }
 }
 
@@ -38,6 +38,10 @@
 
   font-size: 16px;
   line-height: 20px;
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .button--add-order {
@@ -58,6 +62,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .button--green {
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:focus {
+      background-color: #5eaa2f;
+    }
+  }
+
+  .button--gray {
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:focus {
+      background-color: #ebebeb;
+    }
+  }
+
   .button--program {
     @include content-text(20px, 20px);
 
@@ -76,10 +100,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
     width: 249px;
-
-    &:active {
-      color: rgba(68, 68, 68, 0.3);
-    }
   }
 
   .button--add-order {
@@ -101,18 +121,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .button--green {
-    &:hover:not(:disabled) {
-      background-color: #5eaa2f;
-    }
-  }
-
-  .button--gray {
-    &:hover:not(:disabled) {
-      background-color: #ebebeb;
-    }
-  }
-
   .button--program {
     margin-top: 53px;
     margin-left: 80px;

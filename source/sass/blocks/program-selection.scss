@@ -2,6 +2,7 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% 305px;
+  background-color: $green;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -59,13 +60,14 @@
     @include centring(0 auto, 708px);
 
     background-image: none;
+    background-color: $white;
   }
 
   .program-selection__title {
     @include content-text(60px, 60px);
 
     margin: 0;
-    padding-top: 51px;
+    padding-top: 55px;
     padding-left: 88px;
     width: 417px;
 

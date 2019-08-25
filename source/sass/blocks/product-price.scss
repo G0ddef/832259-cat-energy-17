@@ -8,6 +8,8 @@
 
   margin-top: 23px;
   padding: 0;
+
+  list-style: none;
 }
 
 .product-price__item {
@@ -159,9 +161,9 @@
 
         top: 80px;
         left: auto;
-        right: 92px;
+        right: 86px;
 
-        width: 140px;
+        width: 152px;
         height: 194px;
       }
     }
@@ -224,6 +226,24 @@
     }
 
     &:hover {
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 2px;
+        right: -4px;
+
+        display: block;
+        width: 33px;
+        height: 16px;
+
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+    }
+
+    &:focus {
       &::after {
         content: "";
 

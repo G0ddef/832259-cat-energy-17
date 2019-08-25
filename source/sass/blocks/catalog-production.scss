@@ -5,6 +5,8 @@
 .catalog-production__catalog {
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .catalog-production__item {
@@ -13,7 +15,7 @@
   border-bottom: $border;
 
   &:last-child {
-    padding-bottom: 0;
+    padding-bottom: 22px;
   }
 }
 
@@ -70,6 +72,7 @@
   @include content-text(12px, 16px);
 
   padding: 0;
+  display: block;
 
   font-family: "Arial", sans-serif;
   color: $black;
@@ -255,9 +258,6 @@
     }
 
     & tr {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
       padding-top: 8px;
       padding-bottom: 7px;
       width: 250px;
@@ -399,9 +399,6 @@
     & tr {
       @include centring(0 auto, 170px);
 
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
       padding-top: 10px;
       padding-bottom: 6px;
 
