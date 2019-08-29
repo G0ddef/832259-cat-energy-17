@@ -61,7 +61,7 @@
     opacity: 0.3;
   }
 
-  &:active .main-footer__htmlacademy {
+  &:active .main-footer__icon-htmlacademy {
     fill: $green;
   }
 }
@@ -86,7 +86,7 @@
   height: 30px;
 }
 
-.main-footer__htmlacademy {
+.main-footer__icon-htmlacademy {
   fill: #666666;
 }
 
@@ -171,11 +171,11 @@
     padding-bottom: 24px;
     width: 162px;
 
-    &:hover .main-footer__htmlacademy {
+    &:hover .main-footer__icon-htmlacademy {
       fill: $green;
     }
 
-    &:focus .main-footer__htmlacademy {
+    &:focus .main-footer__icon-htmlacademy {
       fill: $green;
     }
   }
@@ -192,7 +192,7 @@
   .main-footer__company-logo {
     padding-top: 0;
 
-    &:focus .main-footer__htmlacademy {
+    &:focus .main-footer__icon-htmlacademy {
       fill: $green;
     }
   }
